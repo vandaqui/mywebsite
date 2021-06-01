@@ -29,10 +29,15 @@ img{
 }
 .container{
   max-width: 1140px;
-  background-color: red;
   margin: auto;
 }
-
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
 
 /*-----
 header
@@ -46,7 +51,10 @@ header
   left: 0;
   z-index: 99;
 }
-.header .logo{
+.header .logo a{
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
   height: 40px;
   width: 40px;
   background-color: violet;
