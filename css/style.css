@@ -57,7 +57,9 @@ header
   line-height: 40px;
   height: 40px;
   width: 40px;
-  background-color: violet;
+  font-size: 24px;
+  color: var(--skin-color);
+  border: 2px solid var(--skin-color);
 }
 .header .hamburger-btn{
   height: 40px;
