@@ -234,10 +234,26 @@ home section
   padding: 0 15px;
 }
 
-.home-section .home-text{
-  background-color: blueviolet;
+.home-section .home-text p{
+  color: var(--text-black-300);
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.home-section .home-text h2{
+}
+.home-section .home-text h1{
+}
+.home-section .home-img .img-box{
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  padding: 15px;
 }
 
-.home-section .home-img{
-  background-color: chartreuse;
+.home-section .home-img .img-box img{
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid transparent;
 }
