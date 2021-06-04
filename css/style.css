@@ -91,6 +91,23 @@ img{
 .align-items-center{
   align-items: center;
 }
+.btn-1{
+  padding: 10px 25px;
+  font-size:16px;
+  font-weight: 500;
+  color: var(--skin-color);
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.btn-1:after{
+  border-radius: 30px;
+  
+}
+
 /*-----
 header
 -----*/
@@ -241,8 +258,17 @@ home section
   margin: 0;
 }
 .home-section .home-text h2{
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin: 0;
 }
 .home-section .home-text h1{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-black-700);
+  margin: 0;
+  text-transform: capitalize;
 }
 .home-section .home-img .img-box{
   max-width: 450px;
@@ -250,6 +276,9 @@ home section
   margin: auto;
   border-radius: 50%;
   padding: 15px;
+}
+.home-section .home-text .btn-1{
+  margin-top: 30px; 
 }
 
 .home-section .home-img .img-box img{
