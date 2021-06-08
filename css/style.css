@@ -199,14 +199,13 @@ img{
     transform: translateX(25px);
   }
 }
-
 .section-title{
   padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
+  margin-bottom: 60px;
 }
-
 .section-title h2{
   display: inline-block;
   font-size: 30px;
@@ -215,7 +214,6 @@ img{
   text-transform: uppercase;
   margin: 0px;
 }
-
 .section-title h2:before{
   content: attr(data-heading);
   display: block;
@@ -280,7 +278,6 @@ header
 .header .hamburger-btn span:after{
   top: 6px;
 }
-
 /*-----
 navigation menu
 -----*/
@@ -297,7 +294,6 @@ navigation menu
   visibility: hidden;
   overflow-y: auto;
 }
-
 .nav-menu .close-nav-menu{
   height: 40px;
   width: 40px;
@@ -316,7 +312,6 @@ navigation menu
 .nav-menu .close-nav-menu:after{
   border-radius: 50%;
 }
-
 .nav-menu-inner{
   display: flex;
   align-items: center;
@@ -357,7 +352,6 @@ home section
 .home-section{
   position: relative;
 }
-
 .home-section .full-screen{
   padding: 50px 0px;
   min-height: 100vh;
@@ -368,7 +362,6 @@ home section
   max-width: 50%;
   padding: 0 15px;
 }
-
 .home-section .home-text p{
   color: var(--text-black-300);
   font-size: 18px;
@@ -398,16 +391,25 @@ home section
 .home-section .home-text .btn-1{
   margin-top: 30px; 
 }
-
 .home-section .home-img .img-box img{
   width: 100%;
   border-radius: 50%;
   border: 10px solid transparent;
 }
 /*-----
-header
+About
 -----*/
 .about-section{
   padding: 80px 0 80px;
   min-height: 100vh;
+}
+.about-section .about-img{
+  background-color:blue;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.about-section .about-info{
+  background-color: red;
+  flex: 0 0 60%;
+  max-width: 40%;
 }
