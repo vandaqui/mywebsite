@@ -522,3 +522,21 @@ About
   color: var(--text-black-600);
   margin-top: -40px;
 }
+.about-section .experience{
+  padding-bottom: 80px;
+}
+.about-section .timeline{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about-section .timeline .timeline-item{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about-section .timeline .timeline-item:nth-child(odd){
+  padding-right: calc(50% + 50px)
+}
+.about-section .timeline .timeline-item-inner{
+  padding: 30px;
+  border-radius: 5px;
+}
