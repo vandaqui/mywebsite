@@ -633,3 +633,25 @@ About
   line-height: 26px;
   margin: 15px 0 0;
 }
+
+/*-----
+Services
+-----*/
+
+.service-section{
+  padding:  80px 0 80px;
+  min-height: 100vh;
+}
+.service-section .service-item{
+  flex: 0 0 33%;
+  max-width: 33%;
+  padding: 15px;
+}
+.service-section .service-item-inner{
+  padding: 50px 15px;
+  border-radius: 5px;
+}
+.service-section .service-item-inner .icon{
+  height: 60px;
+  width: 60px;
+}
