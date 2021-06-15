@@ -646,12 +646,38 @@ Services
   flex: 0 0 33%;
   max-width: 33%;
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .service-section .service-item-inner{
   padding: 50px 15px;
   border-radius: 5px;
+  text-align: center;
 }
 .service-section .service-item-inner .icon{
   height: 60px;
+  text-align: center;
   width: 60px;
+  border-radius:50%;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto 30px;
 }
+.service-section .service-item-inner .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease;
+}
+.service-section .service-item-inner h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+.service-section .service-item-inner p{
+  color: var(--text-black-600);
+  margin: 0;
+  line-height: 26px;
+}
+
