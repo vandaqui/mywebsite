@@ -679,6 +679,9 @@ Services
 .service-section .service-item-inner:hover .icon{
   box-shadow: var(--inner-shadow-0);
 }
+.service-section .service-item-inner:hover .icon:after{
+  box-shadow: var(--outer-shadow);
+}
 .service-section .service-item-inner .icon i{
   font-size: 25px;
   line-height: 60px;
