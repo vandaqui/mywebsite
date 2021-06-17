@@ -869,4 +869,33 @@ portfolio popup
   bottom: 5px;
   font-size: 16px;
   color: var(--text-black-600);
+
+}
+.portfolio-popup .pp-prev, .portfolio-popup .pp-next{
+  position: fixed;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1010;
+  color: var(--text-black-900);
+  transition: all 0.3s ease;
+  opacity: 0.5s;
+}
+.portfolio-popup .pp-prev:hover, .portfolio-popup .pp-next:hover{
+  opacity: 1;
+}
+.portfolio-popup .pp-prev i, .portfolio-popup .pp-next i{
+  line-height: 40px;
+}
+.portfolio-popup .pp-prev i{
+  transform: rotate(180deg);
+}
+.portfolio-popup .pp-prev{
+  left: 15px;
+}
+.portfolio-popup .pp-next{
+  right: 15px;
 }
