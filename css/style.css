@@ -804,6 +804,20 @@ portfolio popup
   z-index: 1000;
   overflow-y: auto;
 }
+.portfolio-popup .pp-details{
+  max-width: 1350px;
+  width: 85%;
+  margin: auto;
+}
+.portfolio-popup .pp-details-inner{
+  padding: 60px 0;
+}
+.portfolio-popup .separator{
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--bg-black-100);
+}
 .portfolio-popup .pp-img{
   max-width: 100%;
   width: auto;
