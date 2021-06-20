@@ -30,7 +30,7 @@ body{
   background-color: var(--bg-black-50);
 
 }
-body.stop-scrolling{
+body.hidden-scrolling{
   overflow-y: hidden;
 }
 *:not(i){
@@ -883,6 +883,7 @@ portfolio popup
 }
 .portfolio-popup .pp-title p span{
   font-weight: 400;
+  text-transform: capitalize;
 }
 .portfolio-popup .pp-project-details h3{
   font-size: 20px;
@@ -916,6 +917,9 @@ portfolio popup
 }
 .portfolio-popup .info ul li span{
   font-weight: 400;
+}
+.portfolio-popup .info ul li a{
+  color: var(--skin-color);
 }
 .portfolio-popup .info ul li:last-child{
   margin-bottom: 0;
