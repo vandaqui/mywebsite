@@ -19,6 +19,10 @@
   })
 })();
 
+function bodyScrollingToggle(){
+  document.body.classList.toggle("stop-scrolling");
+}
+
 
 /*--------- PORTFOLIO FILTER AND POPUP ---------*/
 
@@ -65,14 +69,51 @@
           screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
           // convert screenshots into array
           screenshots = screenshots.split(",");
+          if(screenshots.length === 1){
+            prevBtn.style.display="none";
+            nextBtn.style.display="none";
+          }
+          else{
+            prevBtn.style.display="block";
+            nextBtn.style.display="block";
+          }
           slideIndex = 0;
-          console.log(screenshots);
           popupToggle();
+          popupSlideshow();
         }
+      })
+
+      closeBtn.addEventListener("click", () =>{
+        popupToggle();
       })
 
       function popupToggle(){
         popup.classList.toggle("open");
+        bodyScrollingToggle();
       }
+
+      function popupSlideshow(){
+        const imgSrc = screenshots[slideIndex];
+        const popupImg = popup.querySelector(".pp-img");
+        /* activate loader until the popupImg loaded*/ 
+        popup.querySelector(".pp-loader").classList.add("active");
+        popupImg.src = imgSrc;
+        popupImg.onload = () =>{
+          // deactivate loader afer popupImg loaded
+          popup.querySelector(".pp-loader").classList.remove("active");
+        }
+        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
+      }
+
+      //next slide
+      nextBtn.addEventListener("click", () =>{
+        if(slideIndex === screenshots.length-1){
+          slideIndex = 0;
+        }
+        else{
+          slideIndex++;
+        }
+        popupSlideshow();
+      })
 
 })();
