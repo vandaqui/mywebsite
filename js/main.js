@@ -61,7 +61,18 @@
           const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
           // get the portfolio index
           itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
+          
+          screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
+          // convert screenshots into array
+          screenshots = screenshots.split(",");
+          slideIndex = 0;
+          console.log(screenshots);
+          popupToggle();
         }
       })
+
+      function popupToggle(){
+        popup.classList.toggle("open");
+      }
 
 })();

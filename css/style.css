@@ -810,8 +810,12 @@ portfolio popup
   height: 100%;
   z-index: 1000;
   overflow-y: auto;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
+}
+.portfolio-popup.open{
+  visibility: visible;
+  opacity: 1;
 }
 .portfolio-popup .pp-details{
   max-width: 1350px;
