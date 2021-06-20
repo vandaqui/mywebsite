@@ -859,6 +859,7 @@ portfolio popup
 }
 .portfolio-popup .pp-details.active{
   opacity: 1;
+  margin-bottom: 15px; /* TEMP */
 }
 .portfolio-popup .pp-details-inner{
   padding: 30px 0;
