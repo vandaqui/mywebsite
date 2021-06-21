@@ -1038,9 +1038,15 @@ Testimonial
   width: 100%;
   max-width: 600px;
   margin: auto;
+  padding: 0 15px;
 }
 .testimonial-section .testi-slider{
   border-radius: 5px;
+  overflow: hidden;
+}
+.testimonial-section .testi-slider-container{
+  display: flex;
+  transition: margin 1s ease;
 }
 .testimonial-section .testi-item{
   padding: 30px;

@@ -23,7 +23,6 @@ function bodyScrollingToggle(){
   document.body.classList.toggle("hidden-scrolling");
 }
 
-
 /*--------- PORTFOLIO FILTER AND POPUP ---------*/
 
 (() =>{
@@ -181,3 +180,29 @@ function bodyScrollingToggle(){
 
 })();
 
+/*--------- TESTIMONIAL SLIDER ---------*/
+(() =>{
+    const sliderContainer = document.querySelector(".testi-slider-container"),
+    slides = sliderContainer.querySelector(".testi-item"),
+    slideWidth = sliderContainer.offsetWidth,
+    prevBtn = document.querySelector(".testi-slider-nav .prev"),
+    nextBtn = document.querySelector(".testi-slider-nav .next");
+    let slideIndex = 0;
+
+    //set width of all slides
+    slides.forEach((slide) =>{
+      slide.style.width = slideWidth + "px";
+    })
+    //set width  of sliderContainer
+    sliderContainer.style.width = slideWidth * slides.length + "px";
+
+    nextBtn.addEventListener("click", () =>{
+      if(slideIndex === slides.length-1){
+        slideIndex = 0;
+      }
+      else{
+        slideIndex++;
+      }
+      sliderContainer.style.marginLeft = - (slideWidth * slideIndex) + "px";
+    })
+})();
