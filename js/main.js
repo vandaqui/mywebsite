@@ -186,8 +186,9 @@ function bodyScrollingToggle(){
     slides = sliderContainer.querySelector(".testi-item"),
     slideWidth = sliderContainer.offsetWidth,
     prevBtn = document.querySelector(".testi-slider-nav .prev"),
-    nextBtn = document.querySelector(".testi-slider-nav .next");
-    let slideIndex = 0;
+    nextBtn = document.querySelector(".testi-slider-nav .next"),
+    activeSlide = sliderContainer.querySelector(".testi-item.active");
+    let slideIndex = Array.from(activeSlide.parentElement.children).indexOf(activeSlide);
 
     //set width of all slides
     slides.forEach((slide) =>{
@@ -205,4 +206,24 @@ function bodyScrollingToggle(){
       }
       sliderContainer.style.marginLeft = - (slideWidth * slideIndex) + "px";
     })
+
+    prevBtn.addEventListener("click", () => {
+      if(slideIndex === 0){
+        slideIndex = slides.length-1;
+      }
+      else{
+        slideIndex--;
+      }
+      slider();
+    })
+
+    function slider(){
+      // deactivate existing active slide
+      sliderContainer.querySelector(".testi-item.active").classList.remove("active");
+      // activate new slide
+      slides[slideIndex].classList.add("active");
+      sliderContainer.style.marginLeft = - (slideWidth * slideIndex) + "px";
+    }
+    slider();
+
 })();
