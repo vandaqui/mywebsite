@@ -1109,3 +1109,11 @@ Testimonial
 .testimonial-section .testi-slider-nav span:after{
   border-radius: 50%;
 }
+
+/*-----
+Testimonial
+-----*/
+.contact-section{
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
