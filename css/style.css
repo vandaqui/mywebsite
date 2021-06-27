@@ -638,7 +638,7 @@ About
   position: absolute;
   color: var(--skin-color);
   top: 18px;
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-black-50);
 }
 .about-section .timeline .timeline-item:nth-child(odd) .icon{
   right: -70px;
