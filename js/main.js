@@ -9,7 +9,7 @@
   closeNavBtn.addEventListener("click", hideNavMenu);
   
   function showNavMenu(){
-    navMenu.classList.toggle("open");
+    navMenu.classList.add("open");
     bodyScrollingToggle();
   }
   function hideNavMenu(){
@@ -37,6 +37,30 @@
         // activate new section
         document.querySelector(hash).classList.add("active");
         document.querySelector(hash).classList.remove("hide");
+        // deactivate existing active navigation menu
+        navMenu.querySelector(".active").classList.add("outer-shadow","hover-in-shadow");
+        navMenu.querySelector(".active").classList.remove("active","inner-shadow");
+        /* if clicked 'link-item' is contained whitin the navigation menu */
+        if (navMenu.classList.contains("open")){
+        // activate new navigation menu 'link-item'
+        event.target.classList.add("active","inner-shadow");
+        event.target.classList.remove("outer-shadow","hover-in-shadow");
+        // hide navtigation menu
+        hideNavMenu();
+      }
+      else{
+        let navItems = navMenu.querySelectorAll(".link-item");
+        navItems.forEach((item) =>{
+          if(hash === item.hash){
+            // activate new navigation menu 'link-item'
+            item.classList.add("active", "inner-shadow");
+            item.classList.remove("outer-shadow", "hover-in-shadow");
+        }
+      })
+      fadeOutEffect();
+      }
+      // add hash(#) to url
+      window.location.hash = hash;
       }
     }
   })
@@ -273,7 +297,7 @@ function bodyScrollingToggle(){
 
 })();
 
-/*--------- HIDE ALL SECTIONS EXPECT ACTIVE---------*/
+/*--------- HIDE ALL SECTIONS EXCEPT ACTIVE---------*/
 
 (() =>{
   const sections = document.querySelectorAll(".section");
