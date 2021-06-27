@@ -10,10 +10,37 @@
   
   function showNavMenu(){
     navMenu.classList.toggle("open");
+    bodyScrollingToggle();
   }
   function hideNavMenu(){
     navMenu.classList.remove("open");
+    fadeOutEffect();
+    bodyScrollingToggle();
   }
+  function fadeOutEffect(){
+    document.querySelector(".fade-out-effect").classList.add("active");
+    setTimeout(() =>{
+      document.querySelector(".fade-out-effect").classList.remove("active");
+    },300)
+  }
+  // attach and event handler to document
+  document.addEventListener("click", (event) =>{
+    if(event.target.classList.contains('link-item')){
+      /* make sure event.target.hash has a value before overriding defeault behavior*/
+      if(event.target.hash !==""){
+        // prevent default anchor click behavior
+        event.preventDefault();
+        const hash = event.target.hash;
+        // deactivate existing active "section"
+        document.querySelector(".section.active").classList.add("hide");
+        document.querySelector(".section.active").classList.remove("active");
+        // activate new section
+        document.querySelector(hash).classList.add("active");
+        document.querySelector(hash).classList.remove("hide");
+      }
+    }
+  })
+
 })();
 
 /*--------- ABOUT SECTION ---------*/
