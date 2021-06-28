@@ -554,6 +554,10 @@ About
 .about-section .about-info .btn-1{
   margin: 30px 20px 0 0;
 }
+.about-section .about-info .whatsapp{
+  color: rgb(63, 175, 63);
+  background-color: rgb(219, 253, 219);
+}
 .about-section .about-tabs{
   padding: 60px 15px 50px;
   flex: 0 0 100%;
