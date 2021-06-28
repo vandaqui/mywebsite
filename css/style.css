@@ -4,6 +4,19 @@ fonts
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 /*-----
+Raleway Font Align
+------*/
+.contact-number {
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings:"lnum" 1; 
+  -moz-font-feature-settings:"lnum=1"; 
+  -ms-font-feature-settings:"lnum" 1; 
+  -o-font-feature-settings:"lnum" 1; 
+  -webkit-font-feature-settings:"lnum" 1; 
+  font-feature-settings:"lnum" 1;
+  }
+
+/*-----
 global style
 ------*/
 /* custom css vars */
@@ -1234,7 +1247,7 @@ Contact
 .contact-section .contact-item-inner p.contact-number{
   font-weight: 10;
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+
 }
 .contact-section .contact-form{
   flex: 0 0 100%;
