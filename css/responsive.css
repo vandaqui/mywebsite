@@ -71,6 +71,10 @@
         left: -30px;
         right: auto;
     }
+    .about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before{
+        left: -30px;
+        right: auto;
+    }
 }
 
 @media(max-width: 574px){
