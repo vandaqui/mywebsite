@@ -4,9 +4,9 @@ fonts
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 /*-----
-Raleway Font Align
+Raleway Font Numbers Align
 ------*/
-.contact-number {
+.raleway-number {
   font-variant-numeric: lining-nums;
   -moz-font-feature-settings:"lnum" 1; 
   -moz-font-feature-settings:"lnum=1"; 
@@ -563,6 +563,9 @@ About
 }
 .about-section .about-info span{
   font-weight: 600;
+}
+.about-section .about-info a{
+  color: var(--skin-color);
 }
 .about-section .about-info .btn-1{
   margin: 30px 20px 0 0;
