@@ -136,6 +136,9 @@ img{
 .btn-1:after{
   border-radius: 30px;
 }
+.bold{
+  font-weight: 600 !important;
+}
 .effect-wrap .effect{
   position: absolute;
   z-index: -1;
@@ -725,9 +728,7 @@ About
 .about-section .timeline .timeline-item-inner span{
   font-weight: 500;
   color: var(--skin-color);
-  display: block;
   margin: 0 0 10px;
-  text-transform: capitalize;
 }
 .about-section .timeline .timeline-item-inner h3{
   font-size: 20px;
