@@ -856,6 +856,9 @@ Portfolio
 .portfolio-section .section-title{
   margin-bottom: 40px;
 }
+.portfolio-section .portfolio-item-title{
+  text-align: center;
+}
 .portfolio-section .portfolio-filter{
   padding: 0 15px;
   flex: 0 0 100%;
