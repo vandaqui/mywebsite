@@ -121,7 +121,7 @@ img{
   align-items: center;
 }
 .btn-1{
-  padding: 10px 25px;
+  padding: 10px 15px;
   font-size:16px;
   font-weight: 500;
   color: var(--skin-color);
@@ -136,8 +136,43 @@ img{
 .btn-1:after{
   border-radius: 30px;
 }
+.btn-2{
+  padding: 10px 25px;
+  margin: 10;
+  font-size:16px;
+  font-weight: 500;
+  color: var(--skin-color);
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.btn-2:after{
+  border-radius: 30px;
+}
+.btn-3{
+  padding: 10px 25px;
+  margin: 10;
+  font-size:16px;
+  color: rgb(63, 175, 63);
+  background-color: rgb(219, 253, 219);
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.btn-3:after{
+  border-radius: 30px;
+}
 .bold{
   font-weight: 600 !important;
+}
+.bold-green{
+  font-weight: 600;
+  color: rgb(68, 126, 30);
 }
 .effect-wrap .effect{
   position: absolute;
@@ -500,7 +535,6 @@ home section
   font-weight: 500;
   color: var(--text-black-700);
   margin: 0;
-  text-transform: capitalize;
 }
 .home-section .home-img .img-box{
   max-width: 450px;
@@ -580,10 +614,6 @@ About
 }
 .about-section .about-info .btn-1{
   margin: 30px 20px 0 0;
-}
-.about-section .about-info .whatsapp{
-  color: rgb(63, 175, 63);
-  background-color: rgb(219, 253, 219);
 }
 .about-section .about-tabs{
   padding: 60px 15px 50px;
