@@ -123,7 +123,7 @@ img{
   padding: 10px 15px;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   background-color: transparent;
   line-height: 1.5;
   cursor: pointer;
@@ -140,7 +140,7 @@ img{
   margin: 10;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   background-color: transparent;
   line-height: 1.5;
   cursor: pointer;
@@ -197,13 +197,13 @@ img{
 .effect-2 div{
   width: 3px;
   height: 3px;
-  background-color: #ff9c07;
+  background-color: var(--skin-color-02);
   margin: 0 3px 8px;
 }
 .effect-3{
   width: 180px;
   height: 180px;
-  border: 25px solid var(--skin-color);
+  border: 25px solid var(--skin-color-04);
   border-radius: 50%;
   left: 50%;
   top: -120px;
@@ -211,7 +211,7 @@ img{
 }
 .effect-4{
   border-top: 30px solid transparent;
-  border-left: 30px solid #06d79c;
+  border-left: 30px solid var(--skin-color-02);
   left: 30%;
   top: 20%;
   animation: spin 15s linear infinite;
@@ -219,7 +219,7 @@ img{
 .effect-4:before{
   content: '';
   border-top: 30px solid transparent;
-  border-left: 30px solid #06d79c;
+  border-left: 30px solid var(--skin-color-03);
   position: absolute;
   opacity: 0.5;
   left: -35px;
@@ -295,7 +295,7 @@ img{
   display: block;
   font-size: 16px;
   font-weight: 600;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .section.hide{
   display: none;
@@ -329,7 +329,7 @@ preloader
 .preloader .box div{
   height: 15px;
   width: 15px;
-  background-color: var(--skin-color);
+  background-color: var(--skin-color-04);
   border-radius: 50%;
   animation: loaderAni 1s ease infinite;
 }
@@ -366,9 +366,6 @@ header
   height: 40px;
   width: 40px;
   font-size: 24px;
-  color: var(--skin-color);
-  border-radius: 50px;
-  border: 2px solid var(--skin-color);
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -495,7 +492,7 @@ navigation menu
   transition: all 0.3s ease;
 }
 .nav-menu ul li a.active{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .nav-menu ul li a:after{
   border-radius: 30px;
@@ -595,7 +592,7 @@ About
   transition: all 0.3s ease;
 }
 .about-section .about-img .social-links a:hover{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .about-section .about-img .social-links a i{
   line-height: 40px;
@@ -616,7 +613,7 @@ About
   font-weight: 600;
 }
 .about-section .about-info a{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .about-section .about-info .btn-1{
   margin: 30px 20px 0 0;
@@ -643,7 +640,7 @@ About
   opacity: 0.6;
 }
 .about-section .about-tabs .tab-item.active{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .about-section .tab-content{
   flex: 0 0 100%;
@@ -751,7 +748,7 @@ About
   line-height: 40px;
   font-size: 16px;
   position: absolute;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   top: 18px;
   background-color: var(--bg-black-50);
 }
@@ -763,7 +760,7 @@ About
 }
 .about-section .timeline .timeline-item-inner span{
   font-weight: 500;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   margin: 0 0 10px;
 }
 .about-section .timeline .timeline-item-inner h3{
@@ -837,7 +834,7 @@ Services
   transition: all 0.3s ease;
 }
 .service-section .service-item-inner:hover .icon i{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .service-section .service-item-inner h3{
   font-size: 20px;
@@ -888,7 +885,7 @@ Portfolio
   opacity: 0.6;
 }
 .portfolio-section .filter-item.active{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .portfolio-section .portfolio-item{
   flex: 0 0 33.33%;
@@ -925,7 +922,7 @@ Portfolio
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   transition: all 0.3s ease;
   position: absolute;
   left: 0;
@@ -985,7 +982,7 @@ portfolio popup
 .portfolio-popup .pp-loader div{
   height: 40px;
   width: 40px;
-  border: 3px solid var(--skin-color);
+  border: 3px solid var(--skin-color-04);
   border-radius: 50%;
   border-right: 3px solid transparent;
   animation: spin 2s linear infinite;
@@ -1066,7 +1063,7 @@ portfolio popup
   font-weight: 400;
 }
 .portfolio-popup .info ul li a{
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .portfolio-popup .info ul li:last-child{
   margin-bottom: 0;
@@ -1102,7 +1099,7 @@ portfolio popup
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   cursor: pointer;
   padding:  0 15px;
   left: 0;
@@ -1203,7 +1200,7 @@ Testimonial
 .testimonial-section .testi-item i{
   position: absolute;
   font-size: 30px;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   opacity: 0.1;
 }
 .testimonial-section .testi-item i.left{
@@ -1241,7 +1238,7 @@ Testimonial
 .testimonial-section .testi-slider-nav span{
   height: 40px;
   width: 40px;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
   display: inline-block;
   font-size: 20px;
   cursor: pointer;
@@ -1276,7 +1273,7 @@ Contact
 }
 .contact-section .contact-item-inner i{
   font-size: 25px;
-  color: var(--skin-color);
+  color: var(--skin-color-04);
 }
 .contact-section .contact-item-inner span{
   display: block;
