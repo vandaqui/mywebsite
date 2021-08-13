@@ -174,7 +174,7 @@ function bodyScrollingToggle(){
           // deactivate loader afer popupImg loaded
           popup.querySelector(".pp-loader").classList.remove("active");
         }
-        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
+        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
       }
 
       //next slide
@@ -296,7 +296,7 @@ function bodyScrollingToggle(){
     slider();
 
 })();
-
+/*
 (() =>{
   const sections = document.querySelectorAll(".section");
   sections.forEach((section)=>{
@@ -305,7 +305,7 @@ function bodyScrollingToggle(){
     }
   })
 })();
-
+*/
 window.addEventListener("load", () =>{
   // preloader
   document.querySelector(".preloader").classList.add("fadeout");
