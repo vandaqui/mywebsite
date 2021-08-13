@@ -149,11 +149,9 @@ img{
   padding: 10px 25px;
   margin: 10;
   font-size:16px;
-  color: rgb(63, 175, 63);
-  background-color: rgb(219, 253, 219);
+  background-color: var(--skin-color-01);
   line-height: 1.5;
   cursor: pointer;
-  border-radius: 30px;
   transition: all 0.3s ease;
   display: inline-block;
 }
@@ -162,7 +160,7 @@ img{
 }
 .bold-green{
   font-weight: 600;
-  color: rgb(68, 126, 30);
+  color: var(--skin-color-04);;
 }
 .effect-wrap .effect{
   position: absolute;
@@ -321,7 +319,6 @@ preloader
   height: 15px;
   width: 15px;
   background-color: var(--skin-color-04);
-  border-radius: 50%;
   animation: loaderAni 1s ease infinite;
 }
 .preloader .box div:nth-child(2){
@@ -366,7 +363,6 @@ header
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-radius: 50%;
   justify-content: center;
   transition: all 0.3s ease;
 }
@@ -579,7 +575,6 @@ About
   line-height: 40px;
   color: var(--text-black-600);
   margin: 0 4px;
-  border-radius: 50%;
   transition: all 0.3s ease;
 }
 .about-section .about-img .social-links a:hover{
@@ -620,7 +615,6 @@ About
   margin: 0 5px 10px;
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 30px;
   transition: all 0.3s ease;
   font-size: 16px;
   color: var(--text-black-600);
@@ -735,7 +729,6 @@ About
   width: 40px;
   text-align: center;
   border: 1px solid var(--bg-black-100);
-  border-radius: 50%;
   line-height: 40px;
   font-size: 16px;
   position: absolute;
@@ -790,7 +783,6 @@ Services
 }
 .service-section .service-item-inner{
   padding: 50px 15px;
-  border-radius: 5px;
   text-align: center;
 }
 .service-section .service-item-inner .icon{
@@ -860,11 +852,9 @@ Portfolio
   text-align: center;
 }
 .portfolio-section .filter-item{
-
   display: inline-block;
   margin: 0 5px 10px;
   padding: 5px 10px;
-  border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
   color: var(--text-black-600);
@@ -894,17 +884,15 @@ Portfolio
 }
 .portfolio-section .portfolio-item-inner{
   padding: 15px;
-  border-radius: 5px;
   cursor: pointer;
   width: 100%;
 }
 .portfolio-section .portfolio-item-img img{
-  border-radius: 5px;
   width: 100%;
   transition: all 0.3s ease;
 }
 .portfolio-section .portfolio-item-inner:hover .portfolio-item-img img{
-  transform: translateY(-25px);
+  transform: translateY(-14px);
 }
 .portfolio-section .portfolio-item-img{
   position: relative;
@@ -913,11 +901,11 @@ Portfolio
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
-  color: var(--skin-color-04);
+  color: var(--skin-color-05);
   transition: all 0.3s ease;
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -15px;
   transform: translateY(-5px);
   z-index: -1;
   opacity: 0;
@@ -1070,7 +1058,6 @@ portfolio popup
   width: auto;
   height: auto;
   padding: 10px;
-  border-radius: 5px;
 }
 .portfolio-popup .pp-main{
   min-height: 100vh;
@@ -1087,7 +1074,6 @@ portfolio popup
 }
 .portfolio-popup .pp-project-details-btn{
   position: absolute;
-  border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
   color: var(--skin-color-04);
@@ -1100,13 +1086,7 @@ portfolio popup
   transition: all 0.3 ease;
 }
 .portfolio-popup .pp-project-details-btn i{
-  margin-left: 4px;
-}
-.portfolio-popup .pp-project-details-btn{
-  border-radius: 30px;
-}
-.portfolio-popup .pp-project-details-btn:after{
-  border-radius: 30px;
+  margin-left: 6px;
 }
 .portfolio-popup .pp-close{
   position: absolute;
@@ -1114,9 +1094,8 @@ portfolio popup
   height: 40px;
   width: 40px;
   top: 15px;
-  border-radius: 50%;
   text-align: center;
-  line-height: 35px;
+  line-height: 40px;
   font-size: 35px;
   color: var(--text-black-600);
   cursor: pointer;
@@ -1273,7 +1252,6 @@ Contact
 .contact-section .contact-item-inner{
   padding: 30px 15px;
   text-align: center;
-  border-radius: 5px;
 }
 .contact-section .contact-item-inner i{
   font-size: 25px;
@@ -1312,16 +1290,11 @@ Contact
 .contact-section .input-group{
   margin: 0 0 25px;
   transition: all 0.3s ease;
-  border-radius: 30px;
-}
-.contact-section .input-group:after{
-  border-radius: 30px;
 }
 .contact-section .input-group .input-control{
   height: 45px;
   display: block;
   width: 100%;
-  border-radius: 30px;
   border: none;
   background-color: transparent;
   font-size: 16px;
