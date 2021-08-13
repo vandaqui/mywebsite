@@ -1155,7 +1155,7 @@ portfolio popup
   opacity: 0.5s;
 }
 .portfolio-popup .pp-prev:hover, .portfolio-popup .pp-next:hover{
-  opacity: 1;
+  opacity: 0.5;
 }
 .portfolio-popup .pp-prev i, .portfolio-popup .pp-next i{
   line-height: 40px;
