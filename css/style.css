@@ -1141,12 +1141,25 @@ portfolio popup
   color: var(--text-black-600);
 
 }
-.portfolio-popup .pp-prev, .portfolio-popup .pp-next{
+.portfolio-popup .pp-prev{
   position: block;
   top: 50%;
   height: 40px;
   width: 40px;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1010;
+  color: var(--text-black-900);
+  transition: all 0.3s ease;
+  opacity: 0.5s;
+}
+.portfolio-popup .pp-next{
+  position: block;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: right;
   font-size: 20px;
   cursor: pointer;
   z-index: 1010;
