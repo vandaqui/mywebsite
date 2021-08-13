@@ -994,7 +994,7 @@ portfolio popup
 .portfolio-popup .pp-details{
   max-width: 1350px;
   width: calc(85%+30px);
-  margin: auto;
+  margin: 10px 10px 10px 10px;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -1002,7 +1002,6 @@ portfolio popup
 }
 .portfolio-popup .pp-details.active{
   opacity: 1;
-  margin-bottom: 15px; /* TEMP */
 }
 .portfolio-popup .pp-details-inner{
   padding: 30px 0;
