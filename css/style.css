@@ -106,7 +106,7 @@ img{
   padding: 10px 15px;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color-04);
+  color: var(--skin-color-05);
   background-color: transparent;
   line-height: 1.5;
   cursor: pointer;
@@ -120,7 +120,7 @@ img{
   margin: 10;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color-04);
+  color: var(--skin-color-05);
   background-color: transparent;
   line-height: 1.5;
   cursor: pointer;
@@ -132,7 +132,6 @@ img{
   padding: 10px 25px;
   margin: 10;
   font-size:16px;
-  background-color: var(--skin-color-01);
   line-height: 1.5;
   cursor: pointer;
   transition: all 0.3s ease;
