@@ -107,7 +107,7 @@ img{
   font-size:16px;
   font-weight: 500;
   color: var(--skin-color-05);
-  background-color: transparent;
+  background-color: var(--bg-black-50);
   line-height: 1.5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -121,7 +121,7 @@ img{
   font-size:16px;
   font-weight: 500;
   color: var(--skin-color-05);
-  background-color: transparent;
+  background-color: var(--bg-black-50);
   line-height: 1.5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -251,7 +251,7 @@ img{
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .section-title h2{
   display: inline-block;

@@ -43,6 +43,9 @@
     .about-section .about-img{
         padding-bottom: 30px;
     }
+    .about-section .about-tabs{
+        padding: 45px 15px 20px;;
+    }
     .about-section .timeline .timeline-item:nth-child(odd){
         padding-right: 15px;
         text-align: left;
@@ -62,7 +65,10 @@
         left: -60px;
     }
     .about-section .timeline .timeline-item{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .about-section .timeline .timeline-item-inner{
+        padding: 18px;
     }
     .about-section .timeline .timeline-item:last-child{
         margin-bottom:  0;
@@ -78,6 +84,9 @@
     .contact-section .contact-item{
         flex: 100%;
         max-width: 100%;
+    }
+      .contact-section .contact-item-inner{                                             
+        padding: 10px 15px;
       }
 }
 
