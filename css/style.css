@@ -62,6 +62,7 @@ img{
   max-width: 100%;
 }
 .container{
+  position: relative;
   max-width: 1140px;
   margin: auto;
 }
@@ -527,10 +528,10 @@ About
 .about-section{
   padding: 80px 0 0px;
   min-height: 100vh;
+  overflow: hidden;
 }
 .about-section .background-logo{
   position: absolute;
-  height: 100vh;
   z-index: -1;
   top: 280px;
   right: -350px;
