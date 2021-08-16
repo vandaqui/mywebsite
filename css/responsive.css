@@ -75,6 +75,10 @@
         left: -30px;
         right: auto;
     }
+    .contact-section .contact-item{
+        flex: 100%;
+        max-width: 100%;
+      }
 }
 
 @media(max-width: 574px){
