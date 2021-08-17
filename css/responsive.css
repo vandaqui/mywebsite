@@ -97,4 +97,7 @@
     .home-section .home-text h2{
         font-size: 40px;
     }
+    .service-section .service-item-inner{
+        padding: 20px 10px;
+    }
 }
