@@ -566,7 +566,7 @@
         <div class="contact-item-inner outer-shadow">
           <i class="fas fa-envelope"></i>
           </span></span>
-          <p>contato@vandaquino.com</p>
+          <p>contato@vandaquino.com.br</p>
         </div>
       </div>
       <!-- contact item end-->
@@ -582,22 +582,22 @@
     </div>
     <div class="row">
       <div class="contact-form">
-        <form>
+        <form id="contact-fields" method="post" action="mail.php">
           <div class="row">
             <div class="w-50">
               <div class="input-group outer-shadow hover-in-shadow">
-                <input type="text" placeholder="Nome" class="input-control">
+                <input id="Nome" type="text" placeholder="Nome" class="input-control">
               </div>
               <div class="input-group outer-shadow hover-in-shadow">
-                <input type="text" placeholder="E-mail" class="input-control">
+                <input id="Email" type="text" placeholder="Email" class="input-control">
               </div>
-              <div class="input-group outer-shadow hover-in-shadow">
+              <div class="hidden input-group outer-shadow hover-in-shadow">
                 <input type="text" placeholder="Assunto" class="input-control">
               </div>
             </div>
             <div class="w-50">
               <div class="input-group outer-shadow hover-in-shadow">
-                <textarea class="input-control" placeholder="Mensagem"></textarea>
+                <textarea id="Mensagem" class="input-control" placeholder="Mensagem"></textarea>
               </div>
             </div>
           </div>
