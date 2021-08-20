@@ -101,3 +101,21 @@
         padding: 20px 10px;
     }
 }
+
+@media(max-width: 400px){
+    .portfolio-section .portfolio-item-inner{
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    }
+    .portfolio-section .portfolio-item{
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+
+
