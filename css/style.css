@@ -137,6 +137,7 @@ img{
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
+  background-color: var(--bg-black-50);
 }
 .bold{
   font-weight: 600 !important;
@@ -533,8 +534,8 @@ About
 .about-section .background-logo{
   position: absolute;
   z-index: -1;
-  top: 280px;
-  right: -350px;
+  top: -350px;
+  left: -350px;
   opacity: 0.1;
 }
 .about-section .about-img{

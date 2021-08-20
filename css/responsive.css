@@ -7,7 +7,7 @@
 
 @media(max-width: 767px){
     .contact-section .w-50,
-    .portfolio-poup .description,
+    .projeto-poup .description,
     .service-section .service-item,
     .about-section .skills .skill-item,
     .about-section .about-info,
@@ -103,12 +103,12 @@
 }
 
 @media(max-width: 400px){
-    .portfolio-section .portfolio-item-inner{
+    .projeto-section .projeto-item-inner{
     padding: 5px;
     cursor: pointer;
     width: 100%;
     }
-    .portfolio-section .portfolio-item{
+    .projeto-section .projeto-item{
     flex: 100%;
     max-width: 100%;
     padding: 15px;
