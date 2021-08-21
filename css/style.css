@@ -643,9 +643,6 @@ About
   color: var(--text-black-700);
   text-transform: uppercase;
 }
-.about-section .skills-section-items{
-
-}
 .about-section .skills-svg{
   height: 60px;
   width: 60px;
@@ -1051,7 +1048,7 @@ projeto popup
 .projeto-popup .pp-main{
   min-height: 100vh;
   max-width: 1350px;
-  width: 85%;
+  width: 95%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -1105,7 +1102,6 @@ projeto popup
   position: block;
   top: 50%;
   height: 40px;
-  width: 40px;
   text-align: left;
   font-size: 20px;
   cursor: pointer;
@@ -1118,7 +1114,6 @@ projeto popup
   position: block;
   top: 50%;
   height: 40px;
-  width: 40px;
   text-align: right;
   font-size: 20px;
   cursor: pointer;
