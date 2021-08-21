@@ -1012,6 +1012,12 @@ projeto popup
   line-height: 26px;
   margin: 0;
 }
+.projeto-popup .description span{
+  color: var(--skin-color-05);
+}
+.projeto-popup .description span:hover{
+  color: var(--skin-color-03);
+}
 .projeto-popup .info{
   padding: 10px 15px;
 }
