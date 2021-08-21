@@ -109,7 +109,7 @@
         cursor: pointer;
         width: 100%;
     }
-        .projeto-section .projeto-item{
+    .projeto-section .projeto-item{
         flex: 100%;
         max-width: 100%;
         padding: 15px;
@@ -127,6 +127,9 @@
     }
     .projeto-popup .pp-project-details h3{
         text-align: center;
+    }
+    .projeto-section .projeto-filter{
+        padding: 0;
     }
 }
 
