@@ -100,22 +100,30 @@
     .service-section .service-item-inner{
         padding: 20px 10px;
     }
-}
-
-@media(max-width: 400px){
     .projeto-section .projeto-item-inner{
-    padding: 5px;
-    cursor: pointer;
-    width: 100%;
+        padding: 5px;
+        cursor: pointer;
+        width: 100%;
     }
-    .projeto-section .projeto-item{
-    flex: 100%;
-    max-width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
+        .projeto-section .projeto-item{
+        flex: 100%;
+        max-width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projeto-popup .pp-prev{
+        left: 50px;
+    }
+    .projeto-popup .pp-next{
+        right: 15px;
+    }
+    .projeto-popup .pp-title{
+        text-align: center;
+    }
+    .projeto-popup .pp-project-details h3{
+        text-align: center;
     }
 }
-
 
 
