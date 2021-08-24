@@ -95,11 +95,10 @@ function bodyScrollingToggle(){
 /*--------- PROJECT FILTER AND POPUP ---------*/
 
 (() =>{
-
-      const filterContainer = document.querySelector(".projeto-filter"),
-      projetoItemsContainer = document.querySelector(".projeto-items"),
-      projetoItems = document.querySelectorAll(".projeto-item"),
-      popup = document.querySelector(".projeto-popup"),
+      const filterContainer = document.querySelector(".jobs-filter"),
+      jobsItemsContainer = document.querySelector(".jobs-items"),
+      jobsItems = document.querySelectorAll(".jobs-item"),
+      popup = document.querySelector(".jobs-popup"),
       prevBtn = popup.querySelector(".pp-prev"),
       nextBtn = popup.querySelector(".pp-next"),
       closeBtn = popup.querySelector(".pp-close"),
@@ -107,7 +106,7 @@ function bodyScrollingToggle(){
       projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
       let itemIndex, slideIndex, screenshots;
 
-      /* filter projeto items */
+      /* filter jobs items */
       filterContainer.addEventListener("click", (event)=>{
         if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active")){
           // deactivate existing active 'filter-item'
@@ -115,7 +114,7 @@ function bodyScrollingToggle(){
           // activate new 'filter-item'
           event.target.classList.add("active","outer-shadow");
           const target = event.target.getAttribute("data-target");
-          projetoItems.forEach((item) =>{
+          jobsItems.forEach((item) =>{
             if(target === item.getAttribute("data-category") || target === 'all'){
               item.classList.remove("hide");
               item.classList.add("show");
@@ -128,13 +127,13 @@ function bodyScrollingToggle(){
         }
       })
 
-      projetoItemsContainer.addEventListener("click", (event)=>{
-        if(event.target.closest(".projeto-item-inner")){
-          const projetoItem = event.target.closest(".projeto-item-inner").parentElement;
-          // get the projeto index
-          itemIndex = Array.from(projetoItem.parentElement.children).indexOf(projetoItem);
+      jobsItemsContainer.addEventListener("click", (event)=>{
+        if(event.target.closest(".jobs-item-inner")){
+          const jobsItem = event.target.closest(".jobs-item-inner").parentElement;
+          // get the jobs index
+          itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
           
-          screenshots = projetoItems[itemIndex].querySelector(".projeto-item-img img").getAttribute("data-screenshots");
+          screenshots = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-screenshots");
           // convert screenshots into array
           screenshots = screenshots.split(",");
           if(screenshots.length === 1){
@@ -201,28 +200,28 @@ function bodyScrollingToggle(){
 
       function popupDetails(){
         // get the project details
-        const details = projetoItems[itemIndex].querySelector(".projeto-item-details").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
         popup.querySelector(".pp-project-details").innerHTML = details;
-        const title = projetoItems[itemIndex].querySelector(".projeto-item-title").innerHTML;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
       }
 
       function popupDetails(){
-        // if projeto-item-details not exists
-        if(!projetoItems[itemIndex].querySelector(".projeto-item-details")){
+        // if jobs-item-details not exists
+        if(!jobsItems[itemIndex].querySelector(".jobs-item-details")){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
         projectDetailsBtn.style.display ="block";
         // get the project details
-        const details = projetoItems[itemIndex].querySelector(".projeto-item-details").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
         // set the project details
         popup.querySelector(".pp-project-details").innerHTML = details;
         // get the project title
-        const title = projetoItems[itemIndex].querySelector(".projeto-item-title").innerHTML;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
         // set the project title
         popup.querySelector(".pp-title h2").innerHTML = title;
         // get the project category
-        const category = projetoItems[itemIndex].getAttribute("data-category");
+        const category = jobsItems[itemIndex].getAttribute("data-category");
         // set the project category
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
       }

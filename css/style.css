@@ -825,9 +825,9 @@ Services
 }
 
 /*-----
-projeto
+jobs
 -----*/
-.projeto-section .background-logo{
+.jobs-section .background-logo{
   position: absolute;
   left: 0; 
   right: 0; 
@@ -837,23 +837,23 @@ projeto
   z-index: -1;
   opacity: 0.1;
 }
-.projeto-section{
+.jobs-section{
   padding: 80px 0 80px;
   min-height: 100vh;
 }
-.projeto-section .section-title{
+.jobs-section .section-title{
   margin-bottom: 40px;
 }
-.projeto-section .projeto-item-title{
+.jobs-section .jobs-item-title{
   text-align: center;
 }
-.projeto-section .projeto-filter{
+.jobs-section .jobs-filter{
   padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
 }
-.projeto-section .filter-item{
+.jobs-section .filter-item{
   display: inline-block;
   margin: 0 5px 10px;
   padding: 5px 10px;
@@ -864,46 +864,46 @@ projeto
   font-size: 16px;
   transition: all 0.3s ease;
 }
-.projeto-section .filter-item:hover:not(.active){
+.jobs-section .filter-item:hover:not(.active){
   opacity: 0.6;
 }
-.projeto-section .filter-item.active{
+.jobs-section .filter-item.active{
   color: var(--skin-color-04);
 }
-.projeto-section .projeto-item{
+.jobs-section .jobs-item{
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
 }
-.projeto-section .projeto-item.hide{
+.jobs-section .jobs-item.hide{
   display: none;
 }
-.projeto-section .projeto-item.show{
+.jobs-section .jobs-item.show{
   display: block;
   animation: fadeInTop 0.5s ease;
 }
-.projeto-section .projeto-item-inner{
+.jobs-section .jobs-item-inner{
   padding: 15px;
   cursor: pointer;
   width: 100%;
   background-color: var(--bg-black-50);
   z-index: 0;
 }
-.projeto-section .projeto-item-img img{
+.jobs-section .jobs-item-img img{
   width: 100%;
   transition: all 0.3s ease;
   z-index: 2;
 }
-.projeto-section .projeto-item-inner:hover .projeto-item-img img{
+.jobs-section .jobs-item-inner:hover .jobs-item-img img{
   transform: translateY(-14px);
   z-index: 2;
 }
-.projeto-section .projeto-item-img{
+.jobs-section .jobs-item-img{
   position: relative;
 }
-.projeto-section .projeto-item-img .view-project{
+.jobs-section .jobs-item-img .view-project{
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
@@ -916,14 +916,14 @@ projeto
   z-index: 1;
   opacity: 0;
 }
-.projeto-section .projeto-item-inner:hover .view-project{
+.jobs-section .jobs-item-inner:hover .view-project{
   transform: translateY(0px);
   opacity: 1;
 }
-.projeto-section .projeto-item-details{
+.jobs-section .jobs-item-details{
   display: none;
 }
-.projeto-section .projeto-item-inner p{
+.jobs-section .jobs-item-inner p{
   font-size: 16px;
   margin: 10px 0 0;
   color: var(--text-black-600);
@@ -931,9 +931,9 @@ projeto
 }
 
 /*-------------
-projeto popup
+jobs popup
 -------------*/
-.projeto-popup{
+.jobs-popup{
   background-color: var(--bg-black-50);
   position: fixed;
   left: 0;
@@ -946,7 +946,7 @@ projeto popup
   opacity: 0;
   transition: all 0.3s ease;
 }
-.projeto-popup .pp-loader{
+.jobs-popup .pp-loader{
   position: fixed;
   top: 0;
   left: 0;
@@ -960,11 +960,11 @@ projeto popup
   visibility: hidden;
   opacity: 0;
 }
-.projeto-popup .pp-loader.active{
+.jobs-popup .pp-loader.active{
   visibility: visible;
   opacity: 1;
 }
-.projeto-popup .pp-loader div{
+.jobs-popup .pp-loader div{
   height: 40px;
   width: 40px;
   border: 3px solid var(--skin-color-04);
@@ -972,11 +972,11 @@ projeto popup
   border-right: 3px solid transparent;
   animation: spin 2s linear infinite;
 }
-.projeto-popup.open{
+.jobs-popup.open{
   visibility: visible;
   opacity: 1;
 }
-.projeto-popup .pp-details{
+.jobs-popup .pp-details{
   max-width: 1350px;
   width: calc(85%+30px);
   margin: auto;
@@ -985,31 +985,31 @@ projeto popup
   opacity: 0;
   transition: all 0.5s ease;
 }
-.projeto-popup .pp-details.active{
+.jobs-popup .pp-details.active{
   opacity: 1;
 }
-.projeto-popup .pp-details-inner{
+.jobs-popup .pp-details-inner{
   padding: 30px 0;
 }
-.projeto-popup .pp-title{
+.jobs-popup .pp-title{
   padding: 0 10px; 
   border-bottom: 1px solid var(--text-black-300);
 }
-.projeto-popup .pp-title h2{
+.jobs-popup .pp-title h2{
   font-size: 28px;
   color: var(--skin-color-05);
   text-transform: capitalize;
   font-weight: 600;
   margin: 5px;
 }
-.projeto-popup .pp-project-details h3{
+.jobs-popup .pp-project-details h3{
   font-size: 20px;
   font-weight: 600;
   color: var(--text-black-700);
   margin: 10px 0 15px;
   text-transform: capitalize;
 }
-.projeto-popup .pp-title p{
+.jobs-popup .pp-title p{
   font-size: 14px;
   font-weight: 600;
   color: var(--text-black-600);
@@ -1017,56 +1017,56 @@ projeto popup
   border-bottom: 1px solid var(--text-black-300);
   padding-bottom: 10px;
 }
-.projeto-popup .pp-title p span{
+.jobs-popup .pp-title p span{
   font-weight: 400;
   text-transform: capitalize;
 }
-.projeto-popup .description{
+.jobs-popup .description{
   padding: 0 15px;
 }
-.projeto-popup .description p{
+.jobs-popup .description p{
   font-size: 16px;
   color: var(--text-black-600);
   line-height: 26px;
   margin: 0;
 }
-.projeto-popup .description span{
+.jobs-popup .description span{
   color: var(--skin-color-05);
 }
-.projeto-popup .description span:hover{
+.jobs-popup .description span:hover{
   color: var(--skin-color-03);
 }
-.projeto-popup .info{
+.jobs-popup .info{
   padding: 10px 15px;
 }
-.projeto-popup .info ul li{
+.jobs-popup .info ul li{
   display: block;
   font-weight: 600;
   color: var(--text-black-600);
   font-size: 16px;
 }
-.projeto-popup .info ul li span{
+.jobs-popup .info ul li span{
   font-weight: 400;
 }
-.projeto-popup .info ul li a{
+.jobs-popup .info ul li a{
   color: var(--skin-color-04);
 }
-.projeto-popup .info ul li:last-child{
+.jobs-popup .info ul li:last-child{
   margin-bottom: 0;
 }
-.projeto-popup .separator{
+.jobs-popup .separator{
   height: 1px;
   width: 100%;
   display: block;
   background-color: var(--bg-black-100);
 }
-.projeto-popup .pp-img{
+.jobs-popup .pp-img{
   max-width: 100%;
   width: auto;
   height: auto;
   padding: 10px;
 }
-.projeto-popup .pp-main{
+.jobs-popup .pp-main{
   min-height: 100vh;
   max-width: 1350px;
   width: 95%;
@@ -1075,11 +1075,11 @@ projeto popup
   align-items: center;
   justify-content: center;
 }
-.projeto-popup .pp-main-inner{
+.jobs-popup .pp-main-inner{
   padding: 70px 0 50px;
   position: relative;
 }
-.projeto-popup .pp-project-details-btn{
+.jobs-popup .pp-project-details-btn{
   position: absolute;
   font-size: 16px;
   font-weight: 500;
@@ -1092,10 +1092,10 @@ projeto popup
   line-height: 40px;
   transition: all 0.3 ease;
 }
-.projeto-popup .pp-project-details-btn i{
+.jobs-popup .pp-project-details-btn i{
   margin-left: 6px;
 }
-.projeto-popup .pp-close{
+.jobs-popup .pp-close{
   position: absolute;
   right: 0;
   height: 40px;
@@ -1109,7 +1109,7 @@ projeto popup
   transition: all 0.3s ease;
   color: var(--skin-color-04)
 }
-.projeto-popup .pp-counter{
+.jobs-popup .pp-counter{
   position: absolute;
   right: 0px;
   height: 40px;
@@ -1119,7 +1119,7 @@ projeto popup
   color: var(--text-black-600);
 
 }
-.projeto-popup .pp-prev{
+.jobs-popup .pp-prev{
   position: block;
   top: 50%;
   height: 40px;
@@ -1131,7 +1131,7 @@ projeto popup
   transition: all 0.3s ease;
   opacity: 0.5s;
 }
-.projeto-popup .pp-next{
+.jobs-popup .pp-next{
   position: block;
   top: 50%;
   height: 40px;
@@ -1143,19 +1143,19 @@ projeto popup
   transition: all 0.3s ease;
   opacity: 0.5s;
 }
-.projeto-popup .pp-prev:hover, .projeto-popup .pp-next:hover{
+.jobs-popup .pp-prev:hover, .jobs-popup .pp-next:hover{
   color: var(--skin-color-03);
 }
-.projeto-popup .pp-prev i, .projeto-popup .pp-next i{
+.jobs-popup .pp-prev i, .jobs-popup .pp-next i{
   line-height: 40px;
 }
-.projeto-popup .pp-prev i{
+.jobs-popup .pp-prev i{
   transform: rotate(180deg);
 }
-.projeto-popup .pp-prev{
+.jobs-popup .pp-prev{
   left: 15px;
 }
-.projeto-popup .pp-next{
+.jobs-popup .pp-next{
   right: 15px;
 }
 

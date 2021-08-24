@@ -3,7 +3,7 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .projeto-section .projeto-item{
+    .jobs-section .jobs-item{
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -11,7 +11,7 @@
 
 @media(max-width: 767px){
     .contact-section .w-50,
-    .projeto-poup .description,
+    .jobs-poup .description,
     .service-section .service-item,
     .about-section .skills .skill-item,
     .about-section .about-info,
@@ -104,31 +104,31 @@
     .service-section .service-item-inner{
         padding: 20px 10px;
     }
-    .projeto-section .projeto-item-inner{
+    .jobs-section .jobs-item-inner{
         padding: 5px;
         cursor: pointer;
         width: 100%;
     }
-    .projeto-section .projeto-item{
+    .jobs-section .jobs-item{
         flex: 100%;
         max-width: 100%;
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
     }
-    .projeto-popup .pp-prev{
+    .jobs-popup .pp-prev{
         left: 50px;
     }
-    .projeto-popup .pp-next{
+    .jobs-popup .pp-next{
         right: 15px;
     }
-    .projeto-popup .pp-title{
+    .jobs-popup .pp-title{
         text-align: center;
     }
-    .projeto-popup .pp-project-details h3{
+    .jobs-popup .pp-project-details h3{
         text-align: center;
     }
-    .projeto-section .projeto-filter{
+    .jobs-section .jobs-filter{
         padding: 0;
     }
 }
