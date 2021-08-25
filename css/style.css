@@ -277,6 +277,24 @@ img{
 /*-----
 preloader
 -----*/
+#diamond {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: var(--skin-color-04);
+  position: relative;
+  top: -50px;
+}
+#diamond:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: var(--skin-color-04);
+}
 .preloader{
   position: fixed;
   left: 0;
@@ -296,14 +314,13 @@ preloader
 .preloader .box{
   width: 100px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 .preloader .box div{
   font-size: 40px;
-  padding: 10px;
-  height: 15px;
-  width: 15px;
+  height: 50px;
+  width: 50px;
   color: var(--skin-color-04);
   animation: loaderAni 1s ease infinite;
 }
