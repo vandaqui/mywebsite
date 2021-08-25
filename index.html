@@ -497,20 +497,23 @@
       <!-- jobs item start -->
       <div class="jobs-item" data-category="design">
         <div class="jobs-item-inner-video outer-shadow">
-          <div class="jobs-item-img">
-            <img src="img/projeto/opatraozinho/0-opatraozinho.jpg" alt="opatraozinho" data-screenshots="img/projeto/opatraozinho/1.gif, img/projeto/opatraozinho/2.gif, img/projeto/opatraozinho/3.gif">
+          <div class="jobs-item-img-video">
+            <img src="img/projeto/opatraozinho/0-opatraozinho.jpg" alt="opatraozinho">
+            <video width="320" height="240" controls>
+              <source src="img/projeto/opatraozinho/patrao.mp4" type="video/mp4" data-videos="img/projeto/opatraozinho/patrao.mp4">
+            </video>
             <!-- view project button -->
-            <span class="view-project">Ver Projetos</span>
+            <span class="view-project-video">Ver Projetos</span>
           </div>
-          <p class="jobs-item-title">O Patrãozinho</p>
+          <p class="jobs-item-title-video">O Patrãozinho</p>
           <!-- jobs item details start -->
-          <div class="jobs-item-details">
+          <div class="jobs-item-details-video">
             <div class="row">
-              <div class="description">
+              <div class="description-video">
                 <h3> Design para Lançamento de EP</h3>
                 <p>O Cliente requisitou <a href="docs/jobs_BDD.pdf" target="_blank"><span class="bold">Leia mais aqui.</span></a></p>
               </div>
-              <div class="info">
+              <div class="info-video">
                 <ul>
                   <li>Tecnologia - <span>After Effects / Illustrator</span></li>
                 </ul>
@@ -694,22 +697,23 @@
   </div>
 </div>
 <!-- JOBS IMAGE POPUP END-->
+
 <!-- JOBS VIDEO POPUP START -->
 <!-- JOBS DETAILS START -->
 <div class="pp jobs-popup-video">
   <div class="pp-details-video">
-    <div class="pp-details-inner">
-      <div class="pp-title">
+    <div class="pp-details-inner-video">
+      <div class="pp-title-video">
         <h2>personal jobs</h2>
         <p class="hidden">Categoria - <span class="hidden pp-project-category">Category</span></p>
       </div>
-      <div class="pp-project-details">
+      <div class="pp-project-details-video">
         <div class="row">
-          <div class="description">
+          <div class="description-video">
             <h3> Project:</h3>
             <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div class="info">
+          <div class="info-video">
             <h3>Project info</h3>
             <ul>
               <li>Client - <span>xyz</span></li>
@@ -722,18 +726,20 @@
     </div>
   </div>
   <!-- JOBS DETAILS END -->
-  <div class="separator"></div>
+  <div class="separator-video"></div>
 
-  <div class="pp-main">
+  <div class="pp-main-video">
     <!-- pp navigation prev -->
     <div class="pp-prev-video"><i class="fas fa-play"></i></div>
-    <div class="pp-main-inner">
+    <div class="pp-main-inner-video">
       <div class="pp-project-details-btn-video outer-shadow hover-in-shadow bold">Detalhes<i class="fas fa-plus"></i></div>
       <div class="pp-close-video outer-shadow hover-in-shadow">&times;</div>
-      <img src="img/projeto/default/1.jpg" alt="img" class="pp-img outer-shadow">  
-      <div class="pp-counter">1 de 6</div>
+      <video width="320" height="240" controls>
+        <source src="img/projeto/opatraozinho/a.mp4" type="video/mp4" class="pp-vid">
+      </video>
+      <div class="pp-counter-video">1 de 6</div>
     </div>
-    <div class="pp-loader">
+    <div class="pp-loader-video">
     </div>
     <!-- pp navigation next -->
     <div class="pp-next-video"><i class="fas fa-play"></i></div>
@@ -743,5 +749,6 @@
 
 <!--MAIN JS-->
 <script src="js/main.js"></script>
+<script src="js/video.js"></script>
 </body>
 </html>

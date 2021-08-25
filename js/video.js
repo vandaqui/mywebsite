@@ -33,11 +33,11 @@
       })
 
       jobsItemsContainer.addEventListener("click", (event)=>{
-        if(event.target.closest(".jobs-item-inner")){
-          const jobsItem = event.target.closest(".jobs-item-inner").parentElement;
+        if(event.target.closest(".jobs-item-inner-video")){
+          const jobsItem = event.target.closest(".jobs-item-inner-video").parentElement;
           // get the jobs index
           itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-          videos = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-videos");
+          videos = jobsItems[itemIndex].querySelector(".jobs-item-img-video source").getAttribute("data-videos");
           // convert ideos into array
           videos = videos.split(",");
           if(videos.length === 1){
@@ -69,15 +69,9 @@
 
       function popupSlideshow(){
         const imgSrc = videos[slideIndex];
-        const popupImg = popup.querySelector(".pp-img");
-        /* activate loader until the popupImg loaded*/ 
-        popup.querySelector(".pp-loader").classList.add("active");
+        const popupImg = popup.querySelector(".pp-vid");
         popupImg.src = imgSrc;
-        popupImg.onload = () =>{
-          // deactivate loader afer popupImg loaded
-          popup.querySelector(".pp-loader").classList.remove("active");
-        }
-          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + videos.length;
+        popup.querySelector(".pp-counter-video").innerHTML = (slideIndex+1) + " de " + videos.length;
       }
 
       //next slide
@@ -104,30 +98,26 @@
 
       function popupDetails(){
         // get the project details
-        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
-        popup.querySelector(".pp-project-details").innerHTML = details;
-        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
+        popup.querySelector(".pp-project-details-video").innerHTML = details;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title-video").innerHTML;
       }
 
       function popupDetails(){
         // if jobs-item-details not exists
-        if(!jobsItems[itemIndex].querySelector(".jobs-item-details")){
+        if(!jobsItems[itemIndex].querySelector(".jobs-item-details-video")){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
         projectDetailsBtn.style.display ="block";
         // get the project details
-        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
         // set the project details
-        popup.querySelector(".pp-project-details").innerHTML = details;
+        popup.querySelector(".pp-project-details-video").innerHTML = details;
         // get the project title
-        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title-video").innerHTML;
         // set the project title
-        popup.querySelector(".pp-title h2").innerHTML = title;
-        // get the project category
-        const category = jobsItems[itemIndex].getAttribute("data-category");
-        // set the project category
-        popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
+        popup.querySelector(".pp-title-video h2").innerHTML = title;
       }
 
       projectDetailsBtn.addEventListener("click", ()=>{

@@ -294,7 +294,7 @@ function bodyScrollingToggle(){
     slider();
 
 })();
-
+/*
 (() =>{
   const sections = document.querySelectorAll(".section");
   sections.forEach((section)=>{
@@ -303,7 +303,7 @@ function bodyScrollingToggle(){
     }
   })
 })();
-
+*/
 window.addEventListener("load", () =>{
   // preloader
   document.querySelector(".preloader").classList.add("fadeout");
