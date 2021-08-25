@@ -933,7 +933,7 @@ jobs
 /*-------------
 jobs popup
 -------------*/
-.jobs-popup{
+.jobs-popup, .jobs-popup-video{
   background-color: var(--bg-black-50);
   position: fixed;
   left: 0;
@@ -976,7 +976,7 @@ jobs popup
   visibility: visible;
   opacity: 1;
 }
-.jobs-popup .pp-details{
+.jobs-popup .pp-details, .jobs-popup-video .pp-details-video{
   max-width: 1350px;
   width: calc(85%+30px);
   margin: auto;
@@ -985,10 +985,10 @@ jobs popup
   opacity: 0;
   transition: all 0.5s ease;
 }
-.jobs-popup .pp-details.active{
+.jobs-popup .pp-details.active,.jobs-popup-video .pp-details-video.active{
   opacity: 1;
 }
-.jobs-popup .pp-details-inner{
+.jobs-popup .pp-details-inner, .jobs-popup-video .pp-details-inner-video{
   padding: 30px 0;
 }
 .jobs-popup .pp-title{
@@ -1079,7 +1079,7 @@ jobs popup
   padding: 70px 0 50px;
   position: relative;
 }
-.jobs-popup .pp-project-details-btn{
+.jobs-popup .pp-project-details-btn, .jobs-popup-video .pp-project-details-btn-video{
   position: absolute;
   font-size: 16px;
   font-weight: 500;
@@ -1092,10 +1092,10 @@ jobs popup
   line-height: 40px;
   transition: all 0.3 ease;
 }
-.jobs-popup .pp-project-details-btn i{
+.jobs-popup .pp-project-details-btn i, .jobs-popup-video .pp-project-details-btn-video i{
   margin-left: 6px;
 }
-.jobs-popup .pp-close{
+.jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
   position: absolute;
   right: 0;
   height: 40px;
@@ -1119,7 +1119,7 @@ jobs popup
   color: var(--text-black-600);
 
 }
-.jobs-popup .pp-prev{
+.jobs-popup .pp-prev, .jobs-popup-video .pp-prev-video{
   position: block;
   top: 50%;
   height: 40px;
@@ -1131,7 +1131,7 @@ jobs popup
   transition: all 0.3s ease;
   opacity: 0.5s;
 }
-.jobs-popup .pp-next{
+.jobs-popup .pp-next, .jobs-popup-video .pp-next-video{
   position: block;
   top: 50%;
   height: 40px;
@@ -1143,19 +1143,19 @@ jobs popup
   transition: all 0.3s ease;
   opacity: 0.5s;
 }
-.jobs-popup .pp-prev:hover, .jobs-popup .pp-next:hover{
+.jobs-popup .pp-prev:hover, .jobs-popup .pp-next:hover, .jobs-popup-video .pp-prev-video:hover, .jobs-popup-video .pp-next-video:hover{
   color: var(--skin-color-03);
 }
-.jobs-popup .pp-prev i, .jobs-popup .pp-next i{
+.jobs-popup .pp-prev i, .jobs-popup .pp-next i, .jobs-popup .pp-prev-video i, .jobs-popup .pp-next-video i{
   line-height: 40px;
 }
-.jobs-popup .pp-prev i{
+.jobs-popup .pp-prev i, .jobs-popup-video .pp-prev-video i{
   transform: rotate(180deg);
 }
-.jobs-popup .pp-prev{
+.jobs-popup .pp-prev, .jobs-popup-video .pp-prev-video{
   left: 15px;
 }
-.jobs-popup .pp-next{
+.jobs-popup .pp-next, .jobs-popup-video .pp-next-video{
   right: 15px;
 }
 

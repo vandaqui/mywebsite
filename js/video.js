@@ -3,13 +3,13 @@
       const filterContainer = document.querySelector(".jobs-filter"),
       jobsItemsContainer = document.querySelector(".jobs-items"),
       jobsItems = document.querySelectorAll(".jobs-item"),
-      popup = document.querySelector(".jobs-popup"),
-      prevBtn = popup.querySelector(".pp-prev"),
-      nextBtn = popup.querySelector(".pp-next"),
-      closeBtn = popup.querySelector(".pp-close"),
-      projectDetailsContainer = popup.querySelector(".pp-details"),
-      projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
-      let itemIndex, slideIndex, screenshots;
+      popup = document.querySelector(".jobs-popup-video"),
+      prevBtn = popup.querySelector(".pp-prev-video"),
+      nextBtn = popup.querySelector(".pp-next-video"),
+      closeBtn = popup.querySelector(".pp-close-video"),
+      projectDetailsContainer = popup.querySelector(".pp-details-video"),
+      projectDetailsBtn = popup.querySelector(".pp-project-details-btn-video");
+      let itemIndex, slideIndex, videos;
 
       /* filter jobs items */
       filterContainer.addEventListener("click", (event)=>{
@@ -37,10 +37,10 @@
           const jobsItem = event.target.closest(".jobs-item-inner").parentElement;
           // get the jobs index
           itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-          screenshots = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-screenshots");
-          // convert screenshots into array
-          screenshots = screenshots.split(",");
-          if(screenshots.length === 1){
+          videos = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-videos");
+          // convert ideos into array
+          videos = videos.split(",");
+          if(videos.length === 1){
             prevBtn.style.display="none";
             nextBtn.style.display="none";
           }
@@ -68,7 +68,7 @@
       }
 
       function popupSlideshow(){
-        const imgSrc = screenshots[slideIndex];
+        const imgSrc = videos[slideIndex];
         const popupImg = popup.querySelector(".pp-img");
         /* activate loader until the popupImg loaded*/ 
         popup.querySelector(".pp-loader").classList.add("active");
@@ -77,12 +77,12 @@
           // deactivate loader afer popupImg loaded
           popup.querySelector(".pp-loader").classList.remove("active");
         }
-          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
+          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + videos.length;
       }
 
       //next slide
       nextBtn.addEventListener("click", () =>{
-        if(slideIndex === screenshots.length-1){
+        if(slideIndex === videos.length-1){
           slideIndex = 0;
         }
         else{
@@ -94,7 +94,7 @@
       // prev slide
       prevBtn.addEventListener("click", () =>{
         if(slideIndex === 0){
-          slideIndex = screenshots.length-1
+          slideIndex = videos.length-1
         }
         else{
           slideIndex--;
