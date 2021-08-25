@@ -132,7 +132,6 @@ function bodyScrollingToggle(){
           const jobsItem = event.target.closest(".jobs-item-inner").parentElement;
           // get the jobs index
           itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-          
           screenshots = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-screenshots");
           // convert screenshots into array
           screenshots = screenshots.split(",");
@@ -173,7 +172,7 @@ function bodyScrollingToggle(){
           // deactivate loader afer popupImg loaded
           popup.querySelector(".pp-loader").classList.remove("active");
         }
-        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
+          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
       }
 
       //next slide
