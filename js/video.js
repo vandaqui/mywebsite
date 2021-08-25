@@ -37,7 +37,7 @@
           const jobsItem = event.target.closest(".jobs-item-inner-video").parentElement;
           // get the jobs index
           itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-          videos = jobsItems[itemIndex].querySelector(".jobs-item-img-video source").getAttribute("data-videos");
+          videos = jobsItems[itemIndex].querySelector(".jobs-item-img-video iframe").getAttribute("data-videos");
           // convert ideos into array
           videos = videos.split(",");
           if(videos.length === 1){

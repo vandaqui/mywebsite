@@ -1060,7 +1060,7 @@ jobs popup
   display: block;
   background-color: var(--bg-black-100);
 }
-.jobs-popup .pp-img, .jobs-popup-video .pp-vid{
+.jobs-popup .pp-img{
   max-width: 100%;
   width: auto;
   height: auto;
