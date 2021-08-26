@@ -101,6 +101,14 @@
     .home-section .home-text h2{
         font-size: 40px;
     }
+    .about-section .skills-section-title h1{
+        font-size: 16px;
+    }
+    .about-section .skills-svg{
+        height: 45px;
+        width: 45px;
+        margin: 5px 8px;
+    }
     .service-section .service-item-inner{
         padding: 20px 10px;
     }
