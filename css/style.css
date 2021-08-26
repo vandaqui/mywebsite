@@ -886,6 +886,7 @@ jobs
 }
 .jobs-section .filter-item.active{
   color: var(--skin-color-04);
+  background-color: var(--bg-black-50);
 }
 .jobs-section .jobs-item{
   flex: 0 0 33.33%;
