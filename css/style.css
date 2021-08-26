@@ -950,6 +950,12 @@ jobs
 /*-------------
 jobs popup
 -------------*/
+.jobs-popup-video iframe{
+  position: relative;
+  width: 640px;
+  height: 640px;
+  overflow: auto;
+}
 .jobs-popup, .jobs-popup-video{
   background-color: var(--bg-black-50);
   position: fixed;
