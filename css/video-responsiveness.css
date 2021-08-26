@@ -10,8 +10,34 @@
 @media(max-width: 500px){
     .jobs-popup-video iframe{
         position: relative;
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
         overflow: hidden;
       }
+}
+@media(max-width: 574px){
+.jobs-section .jobs-item-inner-video{
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.jobs-section .jobs-item-video{
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.jobs-popup-video .pp-prev-video{
+    left: 50px;
+}
+.jobs-popup-video .pp-next-video{
+    right: 15px;
+}
+.jobs-popup-video .pp-title-video{
+    text-align: center;
+}
+.jobs-popup-video .pp-project-details-video h3{
+    text-align: center;
+}
 }
