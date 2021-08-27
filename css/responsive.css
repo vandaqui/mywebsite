@@ -112,6 +112,9 @@
     .service-section .service-item-inner{
         padding: 20px 10px;
     }
+    .service-section .service-item-inner .icon{
+        margin: 0 auto 10px;
+    }
     .jobs-section .jobs-item-inner{
         padding: 5px;
         cursor: pointer;
