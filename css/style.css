@@ -1047,6 +1047,9 @@ jobs popup
   text-transform: capitalize;
 }
 .jobs-popup .description, .jobs-popup-video .description-video{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 0 15px;
 }
 .jobs-popup .description p, .jobs-popup-video .description-video p{
