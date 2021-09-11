@@ -815,10 +815,10 @@ Services
   transition: all 0.3s ease;
 }
 .service-section .service-item-inner:hover .icon{
-  box-shadow: var(--inner-shadow-0);
+  box-shadow: var(--inner-shadow);
 }
 .service-section .service-item-inner:hover .icon:after{
-  box-shadow: var(--outer-shadow);
+  box-shadow: var(--outer-shadow-0);
 }
 .service-section .service-item-inner .icon i{
   font-size: 25px;
@@ -1047,6 +1047,9 @@ jobs popup
   text-transform: capitalize;
 }
 .jobs-popup .description, .jobs-popup-video .description-video{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 0 15px;
 }
 .jobs-popup .description p, .jobs-popup-video .description-video p{
