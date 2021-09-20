@@ -1005,9 +1005,9 @@ jobs popup
   max-width: 1350px;
   width: calc(85%+30px);
   margin: auto;
-  max-height: 0;
+  max-height: 300;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s ease;
 }
 .jobs-popup .pp-details.active,.jobs-popup-video .pp-details-video.active{

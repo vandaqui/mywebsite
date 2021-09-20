@@ -226,11 +226,10 @@ function bodyScrollingToggle(){
       }
 
       projectDetailsBtn.addEventListener("click", ()=>{
-        popup.scrollTo(0, projectDetailsContainer.offsetTop);
         popupDetailsToggle();
       })
 
-      function popupDetailsToggle(){
+/*      function popupDetailsToggle(){
         if(projectDetailsContainer.classList.contains("active")){
           projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
           projectDetailsBtn.querySelector("i").classList.add("fa-plus");
@@ -246,7 +245,7 @@ function bodyScrollingToggle(){
         }
       }
 
-})(); 
+})(); */ })();
 
 /*--------- TESTIMONIAL SLIDER ---------*/
 (() =>{
