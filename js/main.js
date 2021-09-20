@@ -226,6 +226,7 @@ function bodyScrollingToggle(){
       }
 
       projectDetailsBtn.addEventListener("click", ()=>{
+        popup.scrollTo(0, projectDetailsContainer.offsetTop);
         popupDetailsToggle();
       })
 
@@ -245,7 +246,7 @@ function bodyScrollingToggle(){
         }
       }
 
-})();
+})(); 
 
 /*--------- TESTIMONIAL SLIDER ---------*/
 (() =>{
