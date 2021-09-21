@@ -210,7 +210,7 @@ function bodyScrollingToggle(){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
-        projectDetailsBtn.style.display ="block";
+ //Important: Details Button is Hidden on CSS       projectDetailsBtn.style.display ="block";
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
         // set the project details
@@ -225,7 +225,7 @@ function bodyScrollingToggle(){
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
       }
 
-      projectDetailsBtn.addEventListener("click", ()=>{
+/*     projectDetailsBtn.addEventListener("click", ()=>{
         popupDetailsToggle();
       })
 
@@ -245,7 +245,7 @@ function bodyScrollingToggle(){
         }
       }
 
-})();
+    */})();
 
 /*--------- TESTIMONIAL SLIDER ---------*/
 (() =>{

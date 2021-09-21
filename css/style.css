@@ -1095,16 +1095,16 @@ jobs popup
   padding: 10px;
 }
 .jobs-popup .pp-main, .jobs-popup-video .pp-main-video{
-  min-height: 100vh;
+  min-height: 10vh;
   max-width: 1350px;
-  width: 95%;
+  width: 98%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .jobs-popup .pp-main-inner, .jobs-popup-video .pp-main-inner-video{
-  padding: 70px 0 50px;
+  padding: 30px 0 30px;
   position: relative;
 }
 .jobs-popup .pp-project-details-btn, .jobs-popup-video .pp-project-details-btn-video{
@@ -1125,10 +1125,11 @@ jobs popup
 }
 .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
   position: absolute;
+  margin-right: 5px;
   right: 0;
   height: 40px;
   width: 40px;
-  top: 15px;
+  top: 6px;
   text-align: center;
   line-height: 40px;
   font-size: 35px;
