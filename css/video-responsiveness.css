@@ -27,17 +27,22 @@
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+    transition: ease all .5s;
 }
 .jobs-popup-video .pp-prev-video{
     left: 50px;
+    transition: ease all .5s;
 }
 .jobs-popup-video .pp-next-video{
     right: 15px;
+    transition: ease all .5s;
 }
 .jobs-popup-video .pp-title-video{
     text-align: center;
+    transition: ease all .5s;
 }
 .jobs-popup-video .pp-project-details-video h3{
     text-align: center;
+    transition: ease all .5s;
 }
 }
