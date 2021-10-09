@@ -2,7 +2,7 @@
 hidden elements
 ------*/
 .hidden{
-  display: none !important;
+  display: none;
 }
 
 /*-----
@@ -1133,7 +1133,6 @@ jobs popup
   text-align: center;
   line-height: 40px;
   font-size: 35px;
-  color: var(--text-black-600);
   cursor: pointer;
   transition: all 0.3s ease;
   color: var(--skin-color-04)

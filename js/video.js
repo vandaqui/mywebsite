@@ -109,7 +109,7 @@
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
-        projectDetailsBtn.style.display ="block";
+  //Important: Details Button is Hidden on CSS      projectDetailsBtn.style.display ="block";
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
         // set the project details
@@ -120,7 +120,7 @@
         popup.querySelector(".pp-title-video h2").innerHTML = title;
       }
 
-      projectDetailsBtn.addEventListener("click", ()=>{
+   /*   projectDetailsBtn.addEventListener("click", ()=>{
         popupDetailsToggle();
       })
 
@@ -140,4 +140,4 @@
         }
       }
 
-})();
+*/})(); 
