@@ -103,13 +103,14 @@
         const title = jobsItems[itemIndex].querySelector(".jobs-item-title-video").innerHTML;
       }
 
-      function popupDetails(){
+   function popupDetails(){
         // if jobs-item-details not exists
         if(!jobsItems[itemIndex].querySelector(".jobs-item-details-video")){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
-  //Important: Details Button is Hidden on CSS      projectDetailsBtn.style.display ="block";
+        //Important: Details Button is Hidden on CSS      
+        //projectDetailsBtn.style.display ="block";
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
         // set the project details
