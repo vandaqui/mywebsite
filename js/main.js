@@ -224,28 +224,7 @@ function bodyScrollingToggle(){
         // set the project category
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
       }
-
-/*     projectDetailsBtn.addEventListener("click", ()=>{
-        popupDetailsToggle();
-      })
-
-        function popupDetailsToggle(){
-        if(projectDetailsContainer.classList.contains("active")){
-          projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
-          projectDetailsBtn.querySelector("i").classList.add("fa-minus");
-          projectDetailsContainer.classList.remove("active");
-          projectDetailsContainer.style.maxHeight = 0 + "px";
-        }
-        else{
-          projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
-          projectDetailsBtn.querySelector("i").classList.add("fa-plus");
-          projectDetailsContainer.classList.add("active");
-          projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
-          popup.scrollTo(0, projectDetailsContainer.offsetTop);
-        }
-      }
-
-    */})();
+})();
 
 (() =>{
   const sections = document.querySelectorAll(".section");
