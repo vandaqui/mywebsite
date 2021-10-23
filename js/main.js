@@ -102,8 +102,7 @@ function bodyScrollingToggle(){
       prevBtn = popup.querySelector(".pp-prev"),
       nextBtn = popup.querySelector(".pp-next"),
       closeBtn = popup.querySelector(".pp-close"),
-      projectDetailsContainer = popup.querySelector(".pp-details"),
-      projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
+      projectDetailsContainer = popup.querySelector(".pp-details");
       let itemIndex, slideIndex, screenshots;
 
       /* filter jobs items */
@@ -210,7 +209,6 @@ function bodyScrollingToggle(){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
- //Important: Details Button is Hidden on CSS       projectDetailsBtn.style.display ="block";
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
         // set the project details
