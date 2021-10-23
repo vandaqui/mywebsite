@@ -7,8 +7,7 @@
       prevBtn = popup.querySelector(".pp-prev-video"),
       nextBtn = popup.querySelector(".pp-next-video"),
       closeBtn = popup.querySelector(".pp-close-video"),
-      projectDetailsContainer = popup.querySelector(".pp-details-video"),
-      projectDetailsBtn = popup.querySelector(".pp-project-details-btn-video");
+      projectDetailsContainer = popup.querySelector(".pp-details-video");
       let itemIndex, slideIndex, videos;
 
       /* filter jobs items */
@@ -109,8 +108,6 @@
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
-        //Important: Details Button is Hidden on CSS      
-        //projectDetailsBtn.style.display ="block";
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
         // set the project details
@@ -120,25 +117,4 @@
         // set the project title
         popup.querySelector(".pp-title-video h2").innerHTML = title;
       }
-
-   /*   projectDetailsBtn.addEventListener("click", ()=>{
-        popupDetailsToggle();
-      })
-
-      function popupDetailsToggle(){
-        if(projectDetailsContainer.classList.contains("active")){
-          projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
-          projectDetailsBtn.querySelector("i").classList.add("fa-plus");
-          projectDetailsContainer.classList.remove("active");
-          projectDetailsContainer.style.maxHeight = 0 + "px";
-        }
-        else{
-          projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
-          projectDetailsBtn.querySelector("i").classList.add("fa-minus");
-          projectDetailsContainer.classList.add("active");
-          projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
-          popup.scrollTo(0, projectDetailsContainer.offsetTop);
-        }
-      }
-
-*/})(); 
+})(); 
