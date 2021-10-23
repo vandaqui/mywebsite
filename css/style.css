@@ -1107,22 +1107,7 @@ jobs popup
   padding: 30px 0 30px;
   position: relative;
 }
-.jobs-popup .pp-project-details-btn, .jobs-popup-video .pp-project-details-btn-video{
-  position: absolute;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--skin-color-04);
-  cursor: pointer;
-  padding:  0 15px;
-  left: 0;
-  top: 15px;
-  height: 40px;
-  line-height: 40px;
-  transition: all 0.3 ease;
-}
-.jobs-popup .pp-project-details-btn i, .jobs-popup-video .pp-project-details-btn-video i{
-  margin-left: 6px;
-}
+
 .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
   position: absolute;
   margin-right: 5px;
