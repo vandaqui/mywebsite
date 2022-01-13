@@ -67,8 +67,8 @@
 
 })();
 
-/*--------- ABOUT SECTION ---------*/
 
+/*--------- ABOUT SECTION ---------*/
 (() =>{
   const aboutSection = document.querySelector(".about-section"),
         tabsContainer = document.querySelector(".about-tabs");
