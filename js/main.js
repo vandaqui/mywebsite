@@ -151,9 +151,9 @@ function bodyScrollingToggle(){
 
       closeBtn.addEventListener("click", () =>{
         popupToggle();
-        if(projectDetailsContainer.classList.contains("active")){
+        /*if(projectDetailsContainer.classList.contains("active")){
           popupDetailsToggle();
-        }
+        }*/
       })
 
       function popupToggle(){
