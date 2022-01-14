@@ -954,7 +954,7 @@ jobs
   color: var(--skin-color-05);
   transition: all 0.3s ease;
   position: absolute;
-  left: 0;
+  left: 38%;
   bottom: -12px;
   transform: translateY(-5px);
   z-index: 1;
