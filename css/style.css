@@ -553,7 +553,7 @@ home section
   display: block;
   margin: auto;
   border-radius: 50%;
-  padding: 15px;
+  padding: 8px;
 }
 .home-section .home-text .btn-1{
   margin-top: 30px; 
@@ -592,12 +592,10 @@ About
 }
 .about-section .about-img .img-box{
   padding: 15px;
-  border-radius: 5px;
 }
 .about-section .about-img .img-box img{
   width: 100%;
   border: 10px solid transparent;
-  border-radius: 5px;
 }
 .about-section .about-img .social-links{
   margin-top: 20px;
