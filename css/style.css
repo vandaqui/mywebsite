@@ -389,6 +389,7 @@ header
   text-transform: uppercase;
 }
 .header .hamburger-btn{
+  padding-top: 15px;
   height: 40px;
   width: 40px;
   display: flex;
@@ -465,6 +466,7 @@ navigation menu
   transition: all 0.3s ease-in;
 }
 .nav-menu .close-nav-menu{
+  padding-top: 15px;
   height: 35px;
   width: 40px;
   display: block;
@@ -482,6 +484,7 @@ navigation menu
   color: var(--skin-color-03);
 }
 .nav-menu-inner{
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
