@@ -482,6 +482,7 @@ navigation menu
   color: var(--skin-color-03);
 }
 .nav-menu-inner{
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,7 +592,7 @@ About
   padding: 0 15px;
 }
 .about-section .about-img .img-box{
-  padding: 15px;
+  padding: 8px;
 }
 .about-section .about-img .img-box img{
   width: 100%;
@@ -927,7 +928,7 @@ jobs
   animation: fadeInTop 0.5s ease;
 }
 .jobs-section .jobs-item-inner, .jobs-section .jobs-item-inner-video{
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   width: 100%;
   background-color: var(--bg-black-50);
@@ -966,7 +967,7 @@ jobs
   display: none;
 }
 .jobs-section .jobs-item-inner p,.jobs-section .jobs-item-inner-video p{
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 0 0;
   color: var(--text-black-600);
   text-transform: capitalize;
@@ -1040,6 +1041,8 @@ jobs popup
   padding: 30px 0;
 }
 .jobs-popup .pp-title, .jobs-popup-video .pp-title-video{
+  display: flex;
+  justify-content: center;
   padding: 0 10px; 
   border-bottom: 1px solid var(--text-black-300);
 }
@@ -1113,6 +1116,7 @@ jobs popup
 }
 .jobs-popup .pp-img{
   max-width: 100%;
+  max-height: 550px;
   width: auto;
   height: auto;
   padding: 10px;
