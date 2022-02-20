@@ -1028,7 +1028,7 @@ jobs popup
 .jobs-popup .pp-details, .jobs-popup-video .pp-details-video{
   max-width: 720px;
   margin: auto;
-  max-height: 300px;
+  /*max-height: 300px;*/
   overflow: hidden;
   opacity: 1;
   transition: all 0.5s ease;
@@ -1037,7 +1037,7 @@ jobs popup
   opacity: 1;
 }
 .jobs-popup .pp-details-inner, .jobs-popup-video .pp-details-inner-video{
-  padding: 30px 0;
+  padding: 30px 0 16px;
 }
 .jobs-popup .pp-title, .jobs-popup-video .pp-title-video{
   display: flex;
@@ -1130,7 +1130,7 @@ jobs popup
   justify-content: center;
 }
 .jobs-popup .pp-main-inner, .jobs-popup-video .pp-main-inner-video{
-  padding: 30px 0 30px;
+  padding: 0 0 30px;
   position: relative;
 }
 
