@@ -167,10 +167,6 @@ img{
 .bold{
   font-weight: 600 !important;
 }
-.bold-green{
-  font-weight: 600;
-  color: var(--skin-color-04);;
-}
 .effect-wrap .effect{
   position: absolute;
   z-index: -1;
