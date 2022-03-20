@@ -1053,7 +1053,6 @@ jobs popup
   font-weight: 600;
   color: var(--text-black-700);
   margin: 10px 0 15px;
-  text-transform: capitalize;
 }
 .jobs-popup .pp-title p, .jobs-popup-video .pp-title-video p{
   font-size: 14px;
