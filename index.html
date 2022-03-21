@@ -13,9 +13,8 @@
 <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
 <!--FONT-AWESOME-->
 <script src="https://kit.fontawesome.com/d596c6443a.js" crossorigin="anonymous"></script>
+<!--CALL JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--MAIN CSS-->
-<link rel="stylesheet" type="text/css" href="css/dropdown.scss">
 </head>
 
 <body>
@@ -445,13 +444,17 @@
       </div>
     </div>
     <!-- project filter start -->
+    <div class="row">
+      <div class="jobs-filter">
     <span class="dropdown-el">
-      <input type="radio" name="sortType" checked="checked"><label for="sort-relevance">Todos</label>
+      <input class="active" type="radio" name="sortType" data-target="all" checked="checked"><label for="sort-relevance">Todos</label>
       <input type="radio" name="sortType" data-target="web"><label for="sort-best">Aplicação Web</label>
       <input type="radio" name="sortType" data-target="design"><label for="sort-low">Design</label>
       <input type="radio" name="sortType" ><label for="sort-high">Loja Virtual</label>
       <input type="radio" name="sortType" ><label for="sort-brand">Portal</label>
     </span>
+    </div>
+    </div>
     <div class="row">
       <div class="jobs-filter">
       <span class="filter-item outer-shadow active" data-target="all">Todos</span>
