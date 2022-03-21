@@ -95,7 +95,7 @@ function bodyScrollingToggle(){
 /*--------- PROJECT FILTER AND POPUP ---------*/
 
 (() =>{
-      const filterContainer = document.querySelector(".dropdown-el"),
+      const filterContainer = document.querySelector(".jobs-filter"),
       jobsItemsContainer = document.querySelector(".jobs-items"),
       jobsItems = document.querySelectorAll(".jobs-item"),
       popup = document.querySelector(".jobs-popup"),
@@ -240,13 +240,3 @@ window.addEventListener("load", () =>{
     document.querySelector(".preloader").style.display="none";
   }, 600)
 })
-
-// Projects Dropdown
-$('.dropdown-el').click(function(e) {
-  e.stopPropagation();
-  $(this).toggleClass('expanded');
-  $('#'+$(e.target).attr('for')).prop('checked',true);
-});
-$(document).click(function() {
-  $('.dropdown-el').removeClass('expanded');
-});

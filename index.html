@@ -13,8 +13,6 @@
 <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
 <!--FONT-AWESOME-->
 <script src="https://kit.fontawesome.com/d596c6443a.js" crossorigin="anonymous"></script>
-<!--CALL JQUERY-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -444,11 +442,13 @@
       </div>
     </div>
     <!-- project filter start -->
-    <span class="dropdown-el">
-      <input class="filter-item active" data-target="all" type="radio" name="sortType" id="sort-relevance"><label for="sort-relevance">Todos</label>
-      <input class="filter-item" data-target="web" type="radio" name="sortType" id="sort-best"><label for="sort-best">Aplicação Web</label>
-      <input class="filter-item" data-target="design" type="radio" name="sortType" id="sort-low"><label for="sort-low">Design</label>
-    </span>
+    <div class="row">
+      <div class="jobs-filter">
+      <span class="filter-item outer-shadow active" data-target="all">Todos</span>
+      <span class="filter-item" data-target="web">Aplicação Web</span>
+      <span class="filter-item" data-target="design">Design</span>
+      </div>
+    </div>
     <!-- project filter end -->
     <!-- project items start -->
     <div class="row jobs-items">
@@ -460,7 +460,8 @@
           <div class="jobs-item-img">
             <img src="img/projeto/sejavida/0.jpg" alt="vsejavida" data-screenshots="img/projeto/sejavida/1.jpg,img/projeto/sejavida/2.jpg,img/projeto/sejavida/3.jpg">
             <!-- view project button -->
-            <span class="view-project">Ver Projeto</span>
+            <span class="view-project">Ver Projeto
+            </span>
           </div>
           <p class="jobs-item-title">Seja Vida - ASSEVI</p>
           <!-- project item details start -->
@@ -488,7 +489,8 @@
           <div class="jobs-item-img">
             <img src="img/projeto/protetoresdeanimais/0-protetoresdeanimais.jpg" alt="vigiapb" data-screenshots="img/projeto/protetoresdeanimais/1.png,img/projeto/protetoresdeanimais/1-1.jpg,img/projeto/protetoresdeanimais/2.png,img/projeto/protetoresdeanimais/3.png, img/projeto/protetoresdeanimais/4.png, img/projeto/protetoresdeanimais/5.png">
             <!-- view project button -->
-            <span class="view-project">Ver Projeto</span>
+            <span class="view-project">Ver Projeto
+            </span>
           </div>
           <p class="jobs-item-title">Protetores de Animais</p>
           <!-- project item details start -->
