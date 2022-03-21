@@ -13,6 +13,9 @@
 <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
 <!--FONT-AWESOME-->
 <script src="https://kit.fontawesome.com/d596c6443a.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--MAIN CSS-->
+<link rel="stylesheet" type="text/css" href="css/dropdown.scss">
 </head>
 
 <body>
@@ -442,6 +445,13 @@
       </div>
     </div>
     <!-- project filter start -->
+    <span class="dropdown-el">
+      <input type="radio" name="sortType" checked="checked"><label for="sort-relevance">Todos</label>
+      <input type="radio" name="sortType" data-target="web"><label for="sort-best">Aplicação Web</label>
+      <input type="radio" name="sortType" data-target="design"><label for="sort-low">Design</label>
+      <input type="radio" name="sortType" ><label for="sort-high">Loja Virtual</label>
+      <input type="radio" name="sortType" ><label for="sort-brand">Portal</label>
+    </span>
     <div class="row">
       <div class="jobs-filter">
       <span class="filter-item outer-shadow active" data-target="all">Todos</span>
@@ -460,8 +470,7 @@
           <div class="jobs-item-img">
             <img src="img/projeto/sejavida/0.jpg" alt="vsejavida" data-screenshots="img/projeto/sejavida/1.jpg,img/projeto/sejavida/2.jpg,img/projeto/sejavida/3.jpg">
             <!-- view project button -->
-            <span class="view-project">Ver Projeto
-            </span>
+            <span class="view-project">Ver Projeto</span>
           </div>
           <p class="jobs-item-title">Seja Vida - ASSEVI</p>
           <!-- project item details start -->
@@ -489,8 +498,7 @@
           <div class="jobs-item-img">
             <img src="img/projeto/protetoresdeanimais/0-protetoresdeanimais.jpg" alt="vigiapb" data-screenshots="img/projeto/protetoresdeanimais/1.png,img/projeto/protetoresdeanimais/1-1.jpg,img/projeto/protetoresdeanimais/2.png,img/projeto/protetoresdeanimais/3.png, img/projeto/protetoresdeanimais/4.png, img/projeto/protetoresdeanimais/5.png">
             <!-- view project button -->
-            <span class="view-project">Ver Projeto
-            </span>
+            <span class="view-project">Ver Projeto</span>
           </div>
           <p class="jobs-item-title">Protetores de Animais</p>
           <!-- project item details start -->
