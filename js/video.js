@@ -1,6 +1,6 @@
 /*--------- PROJECT FILTER AND POPUP ---------*/
 (() =>{
-      const filterContainer = document.querySelector(".jobs-filter"),
+      const filterContainer = document.querySelector(".dropdown-el"),
       jobsItemsContainer = document.querySelector(".jobs-items"),
       jobsItems = document.querySelectorAll(".jobs-item"),
       popup = document.querySelector(".jobs-popup-video"),
