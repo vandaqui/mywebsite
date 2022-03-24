@@ -136,18 +136,18 @@
       </div>
     </div>
 <!--ABOUT TABS START-->
-    <div class="row">
-      <div class="about-tabs">
-        <span class="tab-item" data-target=".skills">Conhecimento</span>
-        <span class="tab-item outer-shadow active" data-target=".education">Academia</span>
-        <span class="tab-item" data-target=".experience">Experiência</span>
+    <div class="row-select">
+      <div class="about-tabs select" tabindex="1">
+        <input class="tab-item active selectopt" data-target=".skills" name="Tab" type="radio" id="opt1" checked="checked"><label for="opt1" class="option">Conhecimento</label>
+        <input class="tab-item selectopt" data-target=".education" name="Tab" type="radio" id="opt2"><label for="opt2" class="option">Academia</label>
+        <input class="tab-item selectopt" data-target=".experience" name="Tab" type="radio" id="opt3"><label for="opt3" class="option">Experiência</label>
       </div>
     </div>
 <!--ABOUT TABS END-->
 
 <!--SKILLS START-->
     <div class="row">
-      <div class="skills tab-content">
+      <div class="skills tab-content active">
         <!--CLOUD-SKILLS-STARTS-->
         <div class="skills-section-group outer-shadow">
             <div class="skills-section-title">
@@ -293,7 +293,7 @@
 <!--EXPERIENCE END-->
 <!--EDUCATION START-->
     <div class="row">
-      <div class="education tab-content active">
+      <div class="education tab-content">
         <div class="row">
           <div class="timeline">
             <div class="row">
@@ -444,18 +444,11 @@
     <!-- project filter start -->
     <div class="row-select">
       <div class="jobs-filter select" tabindex="1">
-        <input class="filter-item active selectopt" data-target="all" name="test" type="radio" id="opt1" checked="checked"><label for="opt1" class="option">Todos</label>
-        <input class="filter-item selectopt" data-target="web" name="test" type="radio" id="opt2"><label for="opt2" class="option">Aplicação Web</label>
-        <input class="filter-item selectopt" data-target="design" name="test" type="radio" id="opt3"><label for="opt3" class="option">Design</label>
+        <input class="filter-item active-job selectopt" data-target="all" name="Select" type="radio" id="opt1" checked="checked"><label for="opt1" class="option">Todos</label>
+        <input class="filter-item selectopt" data-target="web" name="Select" type="radio" id="opt2"><label for="opt2" class="option">Aplicação Web</label>
+        <input class="filter-item selectopt" data-target="design" name="Select" type="radio" id="opt3"><label for="opt3" class="option">Design</label>
       </div>
     </div>
-    <!--<div class="row">
-      <div class="jobs-filter">
-      <span class="filter-item outer-shadow active" data-target="all">Todos</span>
-      <span class="filter-item" data-target="web">Aplicação Web</span>
-      <span class="filter-item" data-target="design">Design</span>
-      </div>
-    </div>-->
     <!-- project filter end -->
     <!-- project items start -->
     <div class="row jobs-items">

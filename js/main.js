@@ -77,9 +77,9 @@
     if(event.target.classList.contains("tab-item") && !event.target.classList.contains("active")){
       const target = event.target.getAttribute("data-target");
         // deactivate existing active 'tab item'
-      tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+      tabsContainer.querySelector(".active").classList.remove("active");
         // activate new 'tab-item'
-      event.target.classList.add("active", "outer-shadow");
+      event.target.classList.add("active");
         // deactivate existing active 'tab-content'
       aboutSection.querySelector(".tab-content.active").classList.remove("active");
         // activate new 'tab-content'
@@ -107,11 +107,11 @@ function bodyScrollingToggle(){
 
       /* filter jobs items */
       filterContainer.addEventListener("click", (event)=>{
-        if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active")){
+        if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active-job")){
           // deactivate existing active 'filter-item'
-          filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+          filterContainer.querySelector(".active-job").classList.remove("active-job");
           // activate new 'filter-item'
-          event.target.classList.add("active","outer-shadow");
+          event.target.classList.add("active");
           const target = event.target.getAttribute("data-target");
           jobsItems.forEach((item) =>{
             if(target === item.getAttribute("data-category") || target === 'all'){
