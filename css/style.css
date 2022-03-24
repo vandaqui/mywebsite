@@ -303,7 +303,7 @@ img{
 /*-----
 preloader
 -----*/
-#diamond {
+#diamond-1,#diamond-2,#diamond-3,#diamond-4  {
   width: 0;
   height: 0;
   border: 15px solid transparent;
@@ -311,7 +311,7 @@ preloader
   position: relative;
   top: -50px;
 }
-#diamond:after {
+#diamond-1:after,#diamond-2:after,#diamond-3:after,#diamond-4:after {
   content: '';
   position: absolute;
   left: -15px;
