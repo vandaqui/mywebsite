@@ -1194,22 +1194,22 @@ jobs popup
   right: 15px;
 }
 
-
+/* Select Options */
 .select {
   display:flex;
   flex-direction: column;
   position:relative;
   width:250px;
   height:40px;
+  color: var(--skin-color-04)
 }
-
 .option {
   padding:0 30px 0 10px;
   min-height:40px;
   display:flex;
   align-items:center;
-  background:#333;
-  border-top:#222 solid 1px;
+  background: var(--bg-black-50);
+  border: #02577a33 solid 1px;
   position:absolute;
   top:0;
   width: 100%;
@@ -1224,7 +1224,7 @@ jobs popup
 }
 
 .option:hover {
-  background:#666;
+  background:var(--bg-black-100);
 }
 
 .select:focus .option {
@@ -1241,8 +1241,7 @@ input {
 input:checked + label {
   order: 1;
   z-index:2;
-  background:#666;
-  border-top:none;
+  border: 1px solid #02577a33;
   position:relative;
 }
 
@@ -1252,7 +1251,7 @@ input:checked + label:after {
 	height: 0; 
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 5px solid white;
+	border-top: 5px solid #02577a33;
   position:absolute;
   right:10px;
   top:calc(50% - 2.5px);
@@ -1266,5 +1265,4 @@ input:checked + label:before {
   height: 40px;
   width: 40px;
   content: '';
-  background:#666;
 }
