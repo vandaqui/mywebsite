@@ -8,4 +8,4 @@ If you find this repository suitable for your portfolio, you may use it and modi
 The portfolio is based on  HTML, CSS, and JAVASCRIPT. You will find it easy to read because all sections and functions are properly commented and indented.
 
 # Contribution
-You can contribute to this repository as long it is commented properly and use good coding practices. Let's learn together!
+You can contribute to this repository as long the code is properly commented and use good coding practices. Let's learn together!

@@ -57,6 +57,7 @@
     .about-section .about-img{
         padding-bottom: 30px;
         transition: ease all .5s;
+        max-width: 450px;
     }
     .about-section .timeline .timeline-item:nth-child(odd){
         padding-right: 15px;
