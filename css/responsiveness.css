@@ -58,10 +58,6 @@
         padding-bottom: 30px;
         transition: ease all .5s;
     }
-    .about-section .about-tabs{
-        padding: 45px 15px 20px;
-        transition: ease all .5s;
-    }
     .about-section .timeline .timeline-item:nth-child(odd){
         padding-right: 15px;
         text-align: left;
