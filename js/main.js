@@ -107,9 +107,9 @@ function bodyScrollingToggle(){
 
       /* filter jobs items */
       filterContainer.addEventListener("click", (event)=>{
-        if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active-job")){
+        if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active")){
           // deactivate existing active 'filter-item'
-          filterContainer.querySelector(".active-job").classList.remove("active-job");
+          filterContainer.querySelector(".active").classList.remove("active");
           // activate new 'filter-item'
           event.target.classList.add("active");
           const target = event.target.getAttribute("data-target");
