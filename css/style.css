@@ -563,7 +563,7 @@ home section
 .home-section .home-img .img-box img{
   width: 100%;
   border-radius: 50%;
-  border: 10px solid transparent;
+  border: 10px solid var(--bg-black-50);
 }
 .home-section .background-logo{
   position: absolute;
@@ -597,7 +597,7 @@ About
 }
 .about-section .about-img .img-box img{
   width: 100%;
-  border: 10px solid transparent;
+  border: 10px solid var(--bg-black-50);
 }
 .about-section .about-img .social-links{
   margin-top: 20px;
@@ -613,6 +613,7 @@ About
   color: var(--skin-color-05);
   margin: 0 4px;
   transition: all 0.3s ease;
+  background-color: var(--bg-black-50);
 }
 .about-section .about-img .social-links a:hover{
   color: var(--skin-color-03);
@@ -630,7 +631,7 @@ About
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 15px;
-  color: var(--text-black-600);
+  color: var(--skin-color-05);
 }
 .about-section .about-info span{
   font-weight: 600;
@@ -660,6 +661,7 @@ About
   padding-bottom: 20px;
   padding-top: 10px;
   margin: 20px;
+  background-color: var(--bg-black-50);
 }
 .about-section .skills-section-title h1{
   font-weight: 700;
