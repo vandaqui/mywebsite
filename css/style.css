@@ -24,8 +24,6 @@
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
-/*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 /*Raleway Font Numbers Align*/
 .raleway-number {
   font-variant-numeric: lining-nums; 
