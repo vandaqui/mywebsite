@@ -89,7 +89,7 @@
 })();
 
 function bodyScrollingToggle(){
-  document.body.classList.toggle("hidden-scrolling");
+  document.body.classList.toggle("bodyScrollingTogglebodyScrollingToggle");
 }
 
 /*--------- PROJECT FILTER AND POPUP ---------*/
@@ -98,11 +98,10 @@ function bodyScrollingToggle(){
       const filterContainer = document.querySelector(".jobs-filter"),
       jobsItemsContainer = document.querySelector(".jobs-items"),
       jobsItems = document.querySelectorAll(".jobs-item"),
-      popup = document.querySelector(".jobs-popup"),
-      prevBtn = popup.querySelector(".pp-prev"),
-      nextBtn = popup.querySelector(".pp-next"),
-      closeBtn = popup.querySelector(".pp-close"),
-      projectDetailsContainer = popup.querySelector(".pp-details");
+      popup = document.querySelector(".jobs-popup,.jobs-popup-video"),
+      prevBtn = popup.querySelector(".pp-prev,.pp-prev-video"),
+      nextBtn = popup.querySelector(".pp-next,.pp-next-video"),
+      closeBtn = popup.querySelector(".pp-close,.pp-close-video");
       let itemIndex, slideIndex, screenshots;
 
       /* filter jobs items */
@@ -127,11 +126,11 @@ function bodyScrollingToggle(){
       })
 
       jobsItemsContainer.addEventListener("click", (event)=>{
-        if(event.target.closest(".jobs-item-inner")){
-          const jobsItem = event.target.closest(".jobs-item-inner").parentElement;
+        if(event.target.closest(".jobs-item-inner,.jobs-item-inner-video")){
+          const jobsItem = event.target.closest(".jobs-item-inner,.jobs-item-inner-video").parentElement;
           // get the jobs index
           itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-          screenshots = jobsItems[itemIndex].querySelector(".jobs-item-img img").getAttribute("data-screenshots");
+          screenshots = jobsItems[itemIndex].querySelector(".jobs-item-img img,.jobs-item-img-video iframe").getAttribute("data-screenshots");
           // convert screenshots into array
           screenshots = screenshots.split(",");
           if(screenshots.length === 1){
@@ -151,9 +150,6 @@ function bodyScrollingToggle(){
 
       closeBtn.addEventListener("click", () =>{
         popupToggle();
-        /*if(projectDetailsContainer.classList.contains("active")){
-          popupDetailsToggle();
-        }*/
       })
 
       function popupToggle(){
@@ -163,7 +159,7 @@ function bodyScrollingToggle(){
 
       function popupSlideshow(){
         const imgSrc = screenshots[slideIndex];
-        const popupImg = popup.querySelector(".pp-img");
+        const popupImg = popup.querySelector(".pp-img,.pp-vid");
         /* activate loader until the popupImg loaded*/ 
         popup.querySelector(".pp-loader").classList.add("active");
         popupImg.src = imgSrc;
@@ -171,7 +167,7 @@ function bodyScrollingToggle(){
           // deactivate loader afer popupImg loaded
           popup.querySelector(".pp-loader").classList.remove("active");
         }
-          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
+          popup.querySelector(".pp-counter,.pp-counter-video").innerHTML = (slideIndex+1) + " de " + screenshots.length;
       }
 
       //next slide
@@ -198,25 +194,25 @@ function bodyScrollingToggle(){
 
       function popupDetails(){
         // get the project details
-        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
-        popup.querySelector(".pp-project-details").innerHTML = details;
-        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details,.jobs-item-details-video").innerHTML;
+        popup.querySelector(".pp-project-details,.pp-project-details-video").innerHTML = details;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title,.jobs-item-title-video").innerHTML;
       }
 
       function popupDetails(){
         // if jobs-item-details not exists
-        if(!jobsItems[itemIndex].querySelector(".jobs-item-details")){
+        if(!jobsItems[itemIndex].querySelector(".jobs-item-details,.jobs-item-details-video")){
           projectDetailsBtn.style.display = "none";
           return; /* end function execution */
         }
         // get the project details
-        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
+        const details = jobsItems[itemIndex].querySelector(".jobs-item-details,.jobs-item-details-video").innerHTML;
         // set the project details
-        popup.querySelector(".pp-project-details").innerHTML = details;
+        popup.querySelector(".pp-project-details,.pp-project-details-video").innerHTML = details;
         // get the project title
-        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
+        const title = jobsItems[itemIndex].querySelector(".jobs-item-title,.jobs-item-title-video").innerHTML;
         // set the project title
-        popup.querySelector(".pp-title h2").innerHTML = title;
+        popup.querySelector(".pp-title h2,.pp-title-video h2").innerHTML = title;
         // get the project category
         const category = jobsItems[itemIndex].getAttribute("data-category");
         // set the project category
