@@ -36,8 +36,8 @@
       const jobsItem = event.target.closest(".jobs-item-inner-video").parentElement;
       // get the jobs index
       itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-      videos = jobsItems[itemIndex].querySelector("iframe[data-screenshots]").getAttribute("data-screenshots");
-      // convert ideos into array
+      videos = jobsItems[itemIndex].querySelector("iframe").getAttribute("data-screenshots");
+      // convert videos into array
       videos = videos.split(",");
       if(videos.length === 1){
         prevBtn.style.display="none";

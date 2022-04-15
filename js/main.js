@@ -160,14 +160,8 @@ function bodyScrollingToggle(){
       function popupSlideshow(){
         const imgSrc = screenshots[slideIndex];
         const popupImg = popup.querySelector(".pp-img");
-        /* activate loader until the popupImg loaded*/ 
-        popup.querySelector(".pp-loader").classList.add("active");
         popupImg.src = imgSrc;
-        popupImg.onload = () =>{
-          // deactivate loader afer popupImg loaded
-          popup.querySelector(".pp-loader").classList.remove("active");
-        }
-          popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
+        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " de " + screenshots.length;
       }
 
       //next slide
@@ -213,10 +207,6 @@ function bodyScrollingToggle(){
         const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
         // set the project title
         popup.querySelector(".pp-title h2").innerHTML = title;
-        // get the project category
-        const category = jobsItems[itemIndex].getAttribute("data-category");
-        // set the project category
-        popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
       }
 })();
 

@@ -1138,39 +1138,6 @@ jobs popup
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.jobs-popup .pp-loader, .jobs-popup-video .pp-loader-video{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1005;
-  background-color: var(--bg-opacity);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  visibility: hidden;
-  opacity: 0;
-}
-.jobs-popup .pp-loader.active, .jobs-popup-video .pp-loader-video.active{
-  visibility: visible;
-  opacity: 1;
-}
-.jobs-popup .pp-loader div,.jobs-popup-video .pp-loader-video div{
-  height: 40px;
-  width: 40px;
-  border: 3px solid var(--skin-color-04);
-  border-radius: 50%;
-  border-right: 3px solid transparent;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
 .jobs-popup.open, .jobs-popup-video.open{
   visibility: visible;
   opacity: 1;
@@ -1178,7 +1145,6 @@ jobs popup
 .jobs-popup .pp-details, .jobs-popup-video .pp-details-video{
   max-width: 720px;
   margin: auto;
-  /*max-height: 300px;*/
   overflow: hidden;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
