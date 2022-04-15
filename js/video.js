@@ -8,7 +8,7 @@
   nextBtn = popup.querySelector(".pp-next-video"),
   closeBtn = popup.querySelector(".pp-close-video"),
   projectDetailsContainer = popup.querySelector(".pp-details-video");
-  let itemIndex, slideIndex, videos;
+  let itemIndex, slideIndex, screenshots;
 
   /* filter jobs items */
   filterContainer.addEventListener("click", (event)=>{
@@ -36,7 +36,7 @@
       const jobsItem = event.target.closest(".jobs-item-inner-video").parentElement;
       // get the jobs index
       itemIndex = Array.from(jobsItem.parentElement.children).indexOf(jobsItem);
-      videos = jobsItems[itemIndex].querySelector(".jobs-item-img-video iframe").getAttribute("data-screenshots");
+      videos = jobsItems[itemIndex].querySelector("iframe[data-screenshots]").getAttribute("data-screenshots");
       // convert ideos into array
       videos = videos.split(",");
       if(videos.length === 1){
@@ -56,9 +56,6 @@
 
   closeBtn.addEventListener("click", () =>{
     popupToggle();
-    if(projectDetailsContainer.classList.contains("active")){
-      popupDetailsToggle();
-    }
   })
 
   function popupToggle(){
@@ -94,13 +91,6 @@
     }
     popupSlideshow();
   })
-
-  function popupDetails(){
-    // get the project details
-    const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
-    popup.querySelector(".pp-project-details-video").innerHTML = details;
-    const title = jobsItems[itemIndex].querySelector(".jobs-item-title-video").innerHTML;
-  }
 
 function popupDetails(){
     // if jobs-item-details not exists
