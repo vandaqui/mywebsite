@@ -189,18 +189,6 @@ function bodyScrollingToggle(){
       function popupDetails(){
         // get the project details
         const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
-        popup.querySelector(".pp-project-details").innerHTML = details;
-        const title = jobsItems[itemIndex].querySelector(".jobs-item-title").innerHTML;
-      }
-
-      function popupDetails(){
-        // if jobs-item-details not exists
-        if(!jobsItems[itemIndex].querySelector(".jobs-item-details")){
-          projectDetailsBtn.style.display = "none";
-          return; /* end function execution */
-        }
-        // get the project details
-        const details = jobsItems[itemIndex].querySelector(".jobs-item-details").innerHTML;
         // set the project details
         popup.querySelector(".pp-project-details").innerHTML = details;
         // get the project title

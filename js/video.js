@@ -8,28 +8,6 @@
   nextBtn = popup.querySelector(".pp-next-video"),
   closeBtn = popup.querySelector(".pp-close-video"),
   projectDetailsContainer = popup.querySelector(".pp-details-video");
-  let itemIndex, slideIndex, screenshots;
-
-  /* filter jobs items */
-  filterContainer.addEventListener("click", (event)=>{
-    if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active")){
-      // deactivate existing active 'filter-item'
-      filterContainer.querySelector(".active").classList.remove( "active");
-      // activate new 'filter-item'
-      event.target.classList.add("active");
-      const target = event.target.getAttribute("data-target");
-      jobsItems.forEach((item) =>{
-        if(target === item.getAttribute("data-category") || target === 'all'){
-          item.classList.remove("hide");
-          item.classList.add("show");
-        }
-        else{
-          item.classList.remove("show");
-          item.classList.add("hide");
-        }
-      })
-    }
-  })
 
   jobsItemsContainer.addEventListener("click", (event)=>{
     if(event.target.closest(".jobs-item-inner-video")){
@@ -52,6 +30,7 @@
       popupSlideshow();
       popupDetails();
     }
+    
   })
 
   closeBtn.addEventListener("click", () =>{
@@ -93,11 +72,6 @@
   })
 
 function popupDetails(){
-    // if jobs-item-details not exists
-    if(!jobsItems[itemIndex].querySelector(".jobs-item-details-video")){
-      projectDetailsBtn.style.display = "none";
-      return; /* end function execution */
-    }
     // get the project details
     const details = jobsItems[itemIndex].querySelector(".jobs-item-details-video").innerHTML;
     // set the project details
