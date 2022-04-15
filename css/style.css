@@ -593,25 +593,6 @@ navigation menu
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.nav-menu .close-nav-menu{
-  height: 35px;
-  width: 40px;
-  display: block;
-  font-size: 35px;
-  line-height: 35px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  text-align: center;
-  color: var(--skin-color-05);
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.nav-menu .close-nav-menu:hover{
-  color: var(--skin-color-03);
-}
 .nav-menu-inner{
   padding: 20px;
   display: -webkit-box;
@@ -637,6 +618,7 @@ navigation menu
 }
 .nav-menu ul li a{
   display: inline-block;
+  width: 100%;
   font-size: 28px;
   font-weight: 600;
   color: var(--skin-color-05);
