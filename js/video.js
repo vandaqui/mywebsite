@@ -6,8 +6,7 @@
   popup = document.querySelector(".jobs-popup-video"),
   prevBtn = popup.querySelector(".pp-prev-video"),
   nextBtn = popup.querySelector(".pp-next-video"),
-  closeBtn = popup.querySelector(".pp-close-video"),
-  projectDetailsContainer = popup.querySelector(".pp-details-video");
+  closeBtn = popup.querySelector(".pp-close-video");
 
   jobsItemsContainer.addEventListener("click", (event)=>{
     if(event.target.closest(".jobs-item-inner-video")){
