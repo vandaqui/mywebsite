@@ -1572,10 +1572,19 @@ input:checked + label:before {
       -o-transition: ease all .5s;
       transition: ease all .5s;
   }
+  .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    top: 0;
+  }
+  .jobs-popup .pp-details-inner, .jobs-popup-video .pp-details-inner-video{
+    padding: 0px 0 16px;
+  }
 }
 
 /* Video Responsiveness */
-/*Manual Responsive Iframe Box*/
+/*Responsive Iframe Box*/
 @media(max-width: 650px){
   .jobs-popup-video iframe{
       position: relative;
