@@ -1575,6 +1575,8 @@ input:checked + label:before {
   .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
     position: relative;
     margin-bottom: 10px;
+    height: 48px;
+    line-height: 52px;
     width: 100%;
     top: 0;
   }
