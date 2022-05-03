@@ -1408,7 +1408,7 @@ input:checked + label:before {
       -webkit-transition: ease all .5s;
       -o-transition: ease all .5s;
       transition: ease all .5s;
-      max-width: 50%;
+      max-width: 72%;
   }
   .about-section .timeline .timeline-item:nth-child(odd){
       padding-right: 15px;
