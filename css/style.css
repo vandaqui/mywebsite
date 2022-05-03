@@ -723,11 +723,11 @@ About
   width: 100%;
   border: 10px solid var(--bg-black-50);
 }
-.about-section .about-img .social-links{
-  margin-top: 20px;
+.about-section .social-links{
+  margin-bottom: 24px;
   text-align: center;
 }
-.about-section .about-img .social-links a{
+.about-section .social-links a{
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -741,10 +741,10 @@ About
   transition: all 0.3s ease;
   background-color: var(--bg-black-50);
 }
-.about-section .about-img .social-links a:hover{
+.about-section .social-links a:hover{
   color: var(--skin-color-03);
 }
-.about-section .about-img .social-links a i{
+.about-section .social-links a i{
   line-height: 40px;
 }
 
@@ -1404,11 +1404,11 @@ input:checked + label:before {
       transition: ease all .5s;
   }
   .about-section .about-img{
-      padding-bottom: 30px;
+      padding-bottom: 14px;
       -webkit-transition: ease all .5s;
       -o-transition: ease all .5s;
       transition: ease all .5s;
-      max-width: 72%;
+      max-width: 70%;
   }
   .about-section .timeline .timeline-item:nth-child(odd){
       padding-right: 15px;
