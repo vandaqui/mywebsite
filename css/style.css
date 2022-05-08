@@ -4,25 +4,21 @@
 }
 /*-----Colors------*/
 :root{
-  --skin-color-01:#D4F0FC;
-  --skin-color-02:#89D6FB;
-  --skin-color-03:#02A9F7;
-  --skin-color-04:#02577A;
-  --skin-color-05:#01303F;
+  --color-1:#D4F0FC;
+  --color-2:#89D6FB;
+  --color-3:#02A9F7;
+  --color-4:#02577A;
+  --color-5:#01303F;
 }
 :root{
-  --bg-black-900: #000000;
-  --bg-black-100: #dddddd;
-  --bg-black-50: #eff0f4;
+  --bg-100: #dddddd;
+  --bg-50: #eff0f4;
   --bg-opacity: rgba(255, 255, 255, 0.5);
-  --text-black-900: #000000;
-  --text-black-700: #555555;
-  --text-black-600: #666666;
-  --text-black-300: #bbbbbb;
+  --text-700: #555555;
+  --text-600: #666666;
+  --text-300: #bbbbbb;
   --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
-  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
-  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
 /*Raleway Font Numbers Align*/
 .raleway-number {
@@ -31,15 +27,13 @@
   -o-font-feature-settings:"lnum" 1; 
   -webkit-font-feature-settings:"lnum" 1; 
   font-feature-settings:"lnum" 1;
-  }
-
+}
 /*global style*/
 body{
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
-  background-color: var(--bg-black-50);
-
+  background-color: var(--bg-50);
 }
 body.hidden-scrolling{
   overflow-y: hidden;
@@ -145,8 +139,8 @@ img{
   padding: 10px 15px;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color-05);
-  background-color: var(--bg-black-50);
+  color: var(--color-5);
+  background-color: var(--bg-50);
   line-height: 1.5;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -161,8 +155,8 @@ img{
   margin: 10;
   font-size:16px;
   font-weight: 500;
-  color: var(--skin-color-05);
-  background-color: var(--bg-black-50);
+  color: var(--color-5);
+  background-color: var(--bg-50);
   line-height: 1.5;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -181,7 +175,7 @@ img{
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: inline-block;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
 }
 .bold{
   font-weight: 600 !important;
@@ -193,7 +187,7 @@ img{
 .effect-1{
   width: 30px;
   height: 30px;
-  border: 4px solid var(--skin-color-03);;
+  border: 4px solid var(--color-3);;
   right: 10%;
   bottom: 10%;
   -webkit-animation: spin 20s linear infinite;
@@ -217,13 +211,13 @@ img{
 .effect-2 div{
   width: 3px;
   height: 3px;
-  background-color: var(--skin-color-02);
+  background-color: var(--color-2);
   margin: 0 3px 8px;
 }
 .effect-3{
   width: 180px;
   height: 180px;
-  border: 25px solid var(--skin-color-04);
+  border: 25px solid var(--color-4);
   border-radius: 50%;
   left: 50%;
   top: -120px;
@@ -232,7 +226,7 @@ img{
 }
 .effect-4{
   border-top: 30px solid transparent;
-  border-left: 30px solid var(--skin-color-02);
+  border-left: 30px solid var(--color-2);
   left: 30%;
   top: 20%;
   -webkit-animation: spin 25s linear infinite;
@@ -241,7 +235,7 @@ img{
 .effect-4:before{
   content: '';
   border-top: 30px solid transparent;
-  border-left: 30px solid var(--skin-color-03);
+  border-left: 30px solid var(--color-3);
   position: absolute;
   opacity: 0.5;
   left: -35px;
@@ -366,7 +360,7 @@ img{
   display: inline-block;
   font-size: 25px;
   font-weight: 700;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   text-transform: uppercase;
   margin: 0px;
 }
@@ -375,7 +369,7 @@ img{
   display: block;
   font-size: 16px;
   font-weight: 600;
-  color: var(--skin-color-04);
+  color: var(--color-4);
 }
 .section.hide{
   display: none;
@@ -388,7 +382,7 @@ preloader
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-bottom-color: var(--skin-color-04);
+  border-bottom-color: var(--color-4);
   position: relative;
   top: -50px;
 }
@@ -400,7 +394,7 @@ preloader
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-top-color: var(--skin-color-04);
+  border-top-color: var(--color-4);
 }
 .preloader{
   position: fixed;
@@ -409,7 +403,7 @@ preloader
   height: 100%;
   width: 100%;
   z-index: 1500;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +434,7 @@ preloader
   font-size: 40px;
   height: 50px;
   width: 50px;
-  color: var(--skin-color-04);
+  color: var(--color-4);
   -webkit-animation: loaderAni 1s ease infinite;
           animation: loaderAni 1s ease infinite;
 }
@@ -519,7 +513,7 @@ header
   display: block;
   height: 2px;
   width: 16px;
-  background-color: var(--skin-color-05);
+  background-color: var(--color-5);
   position: relative;
 }
 .header .hamburger-btn span:before,
@@ -529,7 +523,7 @@ header
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--skin-color-05);
+  background-color: var(--color-5);
 }
 .header .hamburger-btn span:before{
   top: -6px;
@@ -542,7 +536,7 @@ navigation menu
 -----*/
 .nav-menu{
   position: fixed;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
   padding: 0 15px;
   left: 0;
   top: 0;
@@ -559,7 +553,7 @@ navigation menu
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
   z-index: -1;
   visibility: hidden;
 }
@@ -621,7 +615,7 @@ navigation menu
   width: 100%;
   font-size: 28px;
   font-weight: 600;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   margin-bottom: 0px;
   padding: 5px 30px;
   text-transform: capitalize;
@@ -630,10 +624,10 @@ navigation menu
   transition: all 0.3s ease;
 }
 .nav-menu ul li a.active{
-  color: var(--skin-color-04);
+  color: var(--color-4);
 }
 .nav-menu ul li a:hover{
-  color: var(--skin-color-03);
+  color: var(--color-3);
 }
 
 /*-----
@@ -655,7 +649,7 @@ home section
   padding: 0 15px;
 }
 .home-section .home-text p{
-  color: var(--skin-color-05);
+  color: var(--color-5);
   font-size: 18px;
   text-transform: capitalize;
   margin: 0;
@@ -663,13 +657,13 @@ home section
 .home-section .home-text h2{
   font-size: 55px;
   font-weight: 700;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   margin: 0;
 }
 .home-section .home-text h1{
   font-size: 20px;
   font-weight: 500;
-  color: var(--text-black-700);
+  color: var(--text-700);
   margin: 0;
 }
 .home-section .home-img .img-box{
@@ -685,7 +679,7 @@ home section
 .home-section .home-img .img-box img{
   width: 100%;
   border-radius: 50%;
-  border: 10px solid var(--bg-black-50);
+  border: 10px solid var(--bg-50);
 }
 .home-section .background-logo{
   position: absolute;
@@ -721,7 +715,7 @@ About
 }
 .about-section .about-img .img-box img{
   width: 100%;
-  border: 10px solid var(--bg-black-50);
+  border: 10px solid var(--bg-50);
 }
 .about-section .social-links{
   margin-bottom: 24px;
@@ -734,15 +728,15 @@ About
   font-size: 16px;
   text-align: center;
   line-height: 40px;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   margin: 0 4px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
 }
 .about-section .social-links a:hover{
-  color: var(--skin-color-03);
+  color: var(--color-3);
 }
 .about-section .social-links a i{
   line-height: 40px;
@@ -759,13 +753,13 @@ About
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 15px;
-  color: var(--skin-color-05);
+  color: var(--color-5);
 }
 .about-section .about-info span{
   font-weight: 600;
 }
 .about-section .about-info a{
-  color: var(--skin-color-04);
+  color: var(--color-4);
 }
 .about-section .about-contact-info{
   display: -webkit-box;
@@ -796,11 +790,11 @@ About
   padding-bottom: 20px;
   padding-top: 10px;
   margin: 20px;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
 }
 .about-section .skills-section-title h1{
   font-weight: 700;
-  color: var(--text-black-700);
+  color: var(--text-700);
   text-transform: uppercase;
   font-size: 22px;
 }
@@ -827,7 +821,7 @@ About
   height: 100%;
   left: 50%;
   top: 0;
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-100);
 }
 .about-section .timeline .timeline-item{
   -webkit-box-flex: 0;
@@ -846,12 +840,12 @@ About
 .about-section .timeline .timeline-item-inner{
   padding: 30px;
   position: relative;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
 }
 .about-section .timeline .timeline-item-inner:before{
   content: '';
   position: absolute;
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-100);
   width: 30px;
   height: 1px;
   top: 37px;
@@ -868,13 +862,13 @@ About
   height: 40px;
   width: 40px;
   text-align: center;
-  border: 1px solid var(--bg-black-100);
+  border: 1px solid var(--bg-100);
   line-height: 40px;
   font-size: 16px;
   position: absolute;
-  color: var(--skin-color-04);
+  color: var(--color-4);
   top: 18px;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
 }
 .about-section .timeline .timeline-item:nth-child(odd) .icon{
   right: -70px;
@@ -884,24 +878,24 @@ About
 }
 .about-section .timeline .timeline-item-inner span{
   font-weight: 500;
-  color: var(--skin-color-04);
+  color: var(--color-4);
   margin: 0 0 10px;
 }
 .about-section .timeline .timeline-item-inner h3{
   font-size: 20px;
-  color: var(--text-black-700);
+  color: var(--color-5);
   font-weight: 600;
   margin: 0 0 5px;
 }
 .about-section .timeline .timeline-item-inner h4{
   font-size: 16px;
   font-style: italic;
-  color: var(--text-black-600);
+  color: var(--text-600);
   margin: 0;
 }
 .about-section .timeline .timeline-item-inner p{
   font-size: 16px;
-  color: var(--text-black-600);
+  color: var(--text-600);
   line-height: 26px;
   margin: 15px 0 0;
 }
@@ -953,7 +947,7 @@ jobs
   padding: 10px;
   cursor: pointer;
   width: 100%;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
   z-index: 0;
 }
 .jobs-section .jobs-item-img img, .jobs-section .jobs-item-img-video img{
@@ -976,7 +970,7 @@ jobs
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 500;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1001,7 +995,7 @@ jobs
 .jobs-section .jobs-item-inner p,.jobs-section .jobs-item-inner-video p{
   font-size: 18px;
   margin: 10px 0 0;
-  color: var(--text-black-600);
+  color: var(--text-600);
   text-transform: capitalize;
 }
 
@@ -1015,7 +1009,7 @@ jobs popup
   overflow: auto;
 }
 .jobs-popup, .jobs-popup-video{
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-50);
   position: fixed;
   left: 0;
   top: 0;
@@ -1056,11 +1050,11 @@ jobs popup
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 10px; 
-  border-bottom: 1px solid var(--text-black-300);
+  border-bottom: 1px solid var(--text-300);
 }
 .jobs-popup .pp-title h2, .jobs-popup-video .pp-title-video h2{
   font-size: 28px;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   text-transform: capitalize;
   font-weight: 600;
   margin: 5px;
@@ -1068,15 +1062,15 @@ jobs popup
 .jobs-popup .pp-project-details h3, .jobs-popup-video .pp-project-details-video h3{
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-black-700);
+  color: var(--text-700);
   margin: 10px 0 15px;
 }
 .jobs-popup .pp-title p, .jobs-popup-video .pp-title-video p{
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-black-600);
+  color: var(--text-600);
   margin: 0 0 15px;
-  border-bottom: 1px solid var(--text-black-300);
+  border-bottom: 1px solid var(--text-300);
   padding-bottom: 10px;
 }
 .jobs-popup .pp-title p span, .jobs-popup-video .pp-title-video p span{
@@ -1096,15 +1090,15 @@ jobs popup
 }
 .jobs-popup .description p, .jobs-popup-video .description-video p{
   font-size: 16px;
-  color: var(--text-black-600);
+  color: var(--text-600);
   line-height: 26px;
   margin: 0;
 }
 .jobs-popup .description span, .jobs-popup-video .description-video span{
-  color: var(--skin-color-05);
+  color: var(--color-5);
 }
 .jobs-popup .description span:hover, .jobs-popup-video .description-video span:hover{
-  color: var(--skin-color-03);
+  color: var(--color-3);
 }
 .jobs-popup .info, .jobs-popup-video .info-video{
   padding: 10px 15px;
@@ -1112,14 +1106,14 @@ jobs popup
 .jobs-popup .info ul li, .jobs-popup-video .info-video ul li{
   display: block;
   font-weight: 600;
-  color: var(--text-black-600);
+  color: var(--text-600);
   font-size: 16px;
 }
 .jobs-popup .info ul li span, .jobs-popup-video .info-video ul li span{
   font-weight: 400;
 }
 .jobs-popup .info ul li a, .jobs-popup-video .info-video ul li a{
-  color: var(--skin-color-04);
+  color: var(--color-4);
 }
 .jobs-popup .info ul li:last-child, .jobs-popup-video .info-video ul li:last-child{
   margin-bottom: 0;
@@ -1128,7 +1122,7 @@ jobs popup
   height: 1px;
   width: 100%;
   display: block;
-  background-color: var(--bg-black-100);
+  background-color: var(--bg-100);
 }
 .jobs-popup .pp-img{
   max-width: 100%;
@@ -1171,7 +1165,7 @@ jobs popup
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: var(--skin-color-04)
+  color: var(--color-4)
 }
 .jobs-popup .pp-counter, .jobs-popup-video .pp-counter-video{
   position: absolute;
@@ -1180,7 +1174,7 @@ jobs popup
   line-height: 70px;
   bottom: 5px;
   font-size: 16px;
-  color: var(--text-black-600);
+  color: var(--text-600);
 
 }
 .jobs-popup .pp-prev, .jobs-popup-video .pp-prev-video{
@@ -1191,7 +1185,7 @@ jobs popup
   font-size: 20px;
   cursor: pointer;
   z-index: 1010;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1205,14 +1199,14 @@ jobs popup
   font-size: 20px;
   cursor: pointer;
   z-index: 1010;
-  color: var(--skin-color-05);
+  color: var(--color-5);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.5s;
 }
 .jobs-popup .pp-prev:hover, .jobs-popup .pp-next:hover, .jobs-popup-video .pp-prev-video:hover, .jobs-popup-video .pp-next-video:hover{
-  color: var(--skin-color-03);
+  color: var(--color-3);
 }
 .jobs-popup .pp-prev i, .jobs-popup .pp-next i, .jobs-popup-video .pp-prev-video i, .jobs-popup-video .pp-next-video i{
   line-height: 40px;
@@ -1256,7 +1250,7 @@ jobs popup
   position:relative;
   width:250px;
   height:40px;
-  color: var(--skin-color-04);
+  color: var(--color-4);
   box-shadow: 4px 4px #02577a;
 }
 .option {
@@ -1271,7 +1265,7 @@ jobs popup
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--bg-black-50);
+  background: var(--bg-50);
   border: #02577a33 solid 1px;
   position:absolute;
   top:0;
@@ -1291,7 +1285,8 @@ jobs popup
   
 }
 .option:hover {
-  background:var(--bg-black-100);
+  background:var(--color-4);
+  color: var(--color-1);
 }
 .select:focus .option {
   position:relative;
@@ -1316,7 +1311,7 @@ input:checked + label:after {
 	height: 0; 
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 5px solid var(--skin-color-04);
+	border-top: 5px solid var(--color-4);
   position:absolute;
   right:10px;
   top:calc(50% - 2.5px);
