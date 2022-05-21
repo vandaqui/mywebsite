@@ -77,6 +77,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column-reverse;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -151,18 +152,18 @@
   }
   /* meus servicos btn */
   .btn-2{
-    padding: 10px 25px;
-    margin: 10;
+    display: flex;
+    justify-content: center;
+    padding: 10px 76px;
+    margin-top: 14px;
     font-size:16px;
     font-weight: 500;
     color: var(--color-5);
     background-color: var(--bg-50);
-    line-height: 1.5;
     cursor: pointer;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    display: inline-block;
   }
   /* whatsapp btn */
   .btn-3{
@@ -637,38 +638,33 @@
     position: relative;
   }
   .page-404 .full-screen{
-    padding: 70px 0px;
-    min-height: 100vh;
-  }
-  .page-404 .home-text,
-  .page-404 .home-img{
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
+    padding: 160px 0px;
   }
   .page-404 .home-text p{
+    text-align: center;
     color: var(--color-5);
     font-size: 18px;
     text-transform: capitalize;
     margin: 0;
   }
   .page-404 .home-text h2{
-    font-size: 55px;
+    text-align: center;
+    font-size: 70px;
     font-weight: 700;
     color: var(--color-5);
     margin: 0;
   }
   .page-404 .home-text h1{
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
     color: var(--text-700);
     margin: 0;
   }
   .page-404 .home-img .img-box{
+    display: flex;
+    justify-content: center;
     max-width: 450px;
-    display: block;
     margin: auto;
     border-radius: 50%;
     padding: 8px;
@@ -677,9 +673,8 @@
     margin-top: 30px; 
   }
   .page-404 .home-img .img-box img{
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
-    border: 10px solid var(--bg-50);
   }
   .page-404 .background-logo{
     position: absolute;
