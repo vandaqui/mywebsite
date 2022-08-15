@@ -138,6 +138,7 @@
         <input class="tab-item selectopt" data-target=".education" name="Tab" type="radio" id="opt22" ><label for="opt22" class="option">Academia</label>
         <input class="tab-item active selectopt" data-target=".experience" name="Tab" type="radio" id="opt32" checked="checked"><label for="opt32" class="option">Experiência</label>
         <input class="tab-item selectopt" data-target=".extracurricular" name="Tab" type="radio" id="opt42"><label for="opt42" class="option">Extracurricular</label>
+        <input class="tab-item selectopt" data-target=".projetos" name="Tab" type="radio" id="opt52"><label for="opt52" class="option">Projetos</label>
       </div>
     </div>
 <!--ABOUT TABS END-->
@@ -312,10 +313,21 @@
               <div class="timeline-item">
                 <div class="timeline-item-inner outer-shadow">
                   <i class="fas fa-graduation-cap icon"></i>
+                  <span>Jul-22 / ...</span>
+                  <h3>Cibersegurança e Governança de Dados</h3>
+                  <h4>Pós-Graduação - PUC Minas</h4>
+                  <p>Em andamento ...</p>
+                </div>
+              </div>
+              <!--timeline item end-->
+              <!--timeline item start-->
+              <div class="timeline-item">
+                <div class="timeline-item-inner outer-shadow">
+                  <i class="fas fa-graduation-cap icon"></i>
                   <span>Jun-19 / Jun-21</span>
-                  <h3>Banco de Dados SQL</h3>
+                  <h3>Banco de Dados</h3>
                   <h4>Pós-Graduação - Unicesumar</h4>
-                  <p>Pós-Graduação focada na linguagem SQL e PL/SQL, você pode conferir meu <a href="docs/PROJETO_BDD.pdf" target="_blank"><span class="bold">Trabalho de Conclusão de Curso</span></a> com nota 9,7 de aprovação e <a href="docs/HIST_BDD.png" target="_blank"><span class="bold" >Histórico!</span></a> </p>
+                  <p>Pós-Graduação focada estrutura de bando de dados e  também nas linguagens SQL e PL/SQL, você pode conferir meu <a href="docs/PROJETO_BDD.pdf" target="_blank"><span class="bold">Trabalho de Conclusão de Curso</span></a> com nota 9,7 de aprovação e <a href="docs/HIST_BDD.png" target="_blank"><span class="bold" >Histórico!</span></a> </p>
                 </div>
               </div>
               <!--timeline item end-->
@@ -425,36 +437,19 @@
     </div>
   </div>
 <!--EXTRACURRICULAR ENDS-->
-  </div>
-</section>
-<!--ABOUT SECTION ENDS-->
-
-<!-- PROJECT SECTION START -->
-<section class="jobs-section section" id="projetos">
-  <!--background-logo-->
-  <div>
-    <img src="img/logo.svg" class="background-logo" alt="background-logo">
-  </div>
-  <!--background-logo-->
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2 data-heading="Projetos">O que já fiz por aí:</h2>
-      </div>
-    </div>
-    <!-- project filter start -->
-    <div class="row-select">
-      <div class="jobs-filter select" tabindex="1">
-        <input class="filter-item active selectopt" data-target="all" name="Select" type="radio" id="opt1" checked="checked"><label for="opt1" class="option">Todos</label>
-        <input class="filter-item selectopt" data-target="web" name="Select" type="radio" id="opt2"><label for="opt2" class="option">Aplicação Web</label>
-        <input class="filter-item selectopt" data-target="design" name="Select" type="radio" id="opt3"><label for="opt3" class="option">Design</label>
-      </div>
-    </div>
-    <!-- project filter end -->
+<!--PROJECT STARTS-->
     <!-- project items start -->
+  <div class="jobs-section projetos tab-content">
+    <div class="row-select-sub">
+      <div class="jobs-filter select" tabindex="1">
+        <input class="filter-item active selectopt" data-target="personal" name="Select" type="radio" id="opt2" checked="checked"><label for="opt2" class="option">Pessoais</label>
+        <input class="filter-item selectopt" data-target="professional" name="Select" type="radio" id="opt3"><label for="opt3" class="option">Profissionais</label>
+        <input class="filter-item selectopt" data-target="all" name="Select" type="radio" id="opt1"><label for="opt1" class="option">Todos</label>
+      </div>
+    </div>
     <div class="row jobs-items">
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="personal">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/sejavida/0.webp" alt="imagem sejavida" data-screenshots="img/projeto/sejavida/1.webp,img/projeto/sejavida/2.webp,img/projeto/sejavida/3.webp">
@@ -482,7 +477,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="personal">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/protetoresdeanimais/0.webp" alt="imagem protetores de animais" data-screenshots="img/projeto/protetoresdeanimais/1.webp,img/projeto/protetoresdeanimais/1-1.webp,img/projeto/protetoresdeanimais/2.webp,img/projeto/protetoresdeanimais/3.webp, img/projeto/protetoresdeanimais/4.webp, img/projeto/protetoresdeanimais/5.webp">
@@ -510,7 +505,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="personal">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/vigiapb/0.webp" alt="vigiapb" data-screenshots="img/projeto/vigiapb/1.webp,img/projeto/vigiapb/2.webp,img/projeto/vigiapb/3.webp">
@@ -538,7 +533,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/alexteleva/0.webp" alt="imagem alex te leva" data-screenshots="img/projeto/alexteleva/1.webp,img/projeto/alexteleva/2.webp,img/projeto/alexteleva/3.webp">
@@ -566,7 +561,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/tvarapuan/0.webp" alt="tvarapuan" data-screenshots="img/projeto/tvarapuan/1.webp,img/projeto/tvarapuan/3.webp,img/projeto/tvarapuan/4.webp,img/projeto/tvarapuan/6.webp,img/projeto/tvarapuan/9.0.webp,img/projeto/tvarapuan/9.1.webp,img/projeto/tvarapuan/10.webp">
@@ -594,7 +589,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/ecommerciar/0.webp" alt="ecommerciar" data-screenshots="img/projeto/ecommerciar/1.webp,img/projeto/ecommerciar/2.webp,img/projeto/ecommerciar/3.webp">
@@ -622,7 +617,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/midiativamente/0.webp" alt="midiativamente" data-screenshots="img/projeto/midiativamente/1.webp,img/projeto/midiativamente/2.webp">
@@ -650,7 +645,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="web">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/floraafeto/0.webp" alt="floraafeto" data-screenshots="img/projeto/floraafeto/1.webp,img/projeto/floraafeto/2.webp,img/projeto/floraafeto/3.webp,img/projeto/floraafeto/4.webp">
@@ -678,7 +673,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="design">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner-video outer-shadow">
           <div class="jobs-item-img-video">
             <img src="img/projeto/opatraozinho/0-opatraozinho.jpg" alt="opatraozinho">
@@ -706,7 +701,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="design">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/mycloset/0-mycloset.webp" alt="mycloset" data-screenshots="img/projeto/mycloset/1.webp, img/projeto/mycloset/2.webp, img/projeto/mycloset/3.webp">
@@ -733,7 +728,7 @@
       </div>
       <!-- project item end -->
       <!-- project item start -->
-      <div class="jobs-item" data-category="design">
+      <div class="jobs-item" data-category="professional">
         <div class="jobs-item-inner outer-shadow">
           <div class="jobs-item-img">
             <img src="img/projeto/acheijampa/0-acheijampa.webp" alt="acheijampa" data-screenshots="img/projeto/acheijampa/1.webp, img/projeto/acheijampa/2.webp, img/projeto/acheijampa/3.webp,img/projeto/acheijampa/3-1.webp, img/projeto/acheijampa/4.webp">
@@ -761,9 +756,10 @@
       <!-- project item end -->
     </div>
     <!-- project items end -->
+</div>
   </div>
 </section>
-<!-- project SECTION END -->
+<!--PROJECT  ENDS-->
 
 <!-- JOBS IMAGE POPUP START -->
 <!-- JOBS DETAILS START -->
@@ -845,6 +841,5 @@
 
 <!--MAIN JS-->
 <script src="js/main.js"></script>
-<script src="js/video.js"></script>
 </body>
 </html>
