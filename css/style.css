@@ -1297,7 +1297,6 @@ jobs popup
           box-sizing:border-box;
   overflow:hidden;
   white-space:nowrap;
-  
 }
 .option:hover {
   background:var(--color-4);
