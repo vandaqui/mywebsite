@@ -1265,6 +1265,22 @@ jobs popup
   position:relative;
   width:250px;
   height:40px;
+  z-index: 10;
+  color: var(--color-4);
+  box-shadow: 4px 4px #02577a;
+}
+.select-2 {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position:relative;
+  width:250px;
+  height:40px;
+  z-index: 9;
   color: var(--color-4);
   box-shadow: 4px 4px #02577a;
 }
@@ -1303,6 +1319,10 @@ jobs popup
   color: var(--color-1);
 }
 .select:focus .option {
+  position:relative;
+  pointer-events:all;
+}
+.select-2:focus .option {
   position:relative;
   pointer-events:all;
 }
