@@ -2,6 +2,9 @@
 .hidden{
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*-----Colors------*/
 :root{
   --color-1:#D4F0FC;

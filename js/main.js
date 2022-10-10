@@ -1,10 +1,10 @@
 
 /*--------- NAVIGATION MENU ---------*/
-(()=>{
+/*(()=>{
   // attach and event handler to document
   document.addEventListener("click", (event) =>{
     if(event.target.classList.contains('link-item')){
-      /* make sure event.target.hash has a value before overriding defeault behavior*/
+       make sure event.target.hash has a value before overriding defeault behavior
       if(event.target.hash !==""){
         // prevent default anchor click behavior
         event.preventDefault();
@@ -23,7 +23,7 @@
       }
     }
   })
-})();
+})();*/
 
 /*--------- ABOUT SECTION ---------*/
 (() =>{
