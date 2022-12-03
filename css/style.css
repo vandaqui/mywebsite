@@ -702,8 +702,8 @@ About
 .about-section .background-logo{
   position: absolute;
   z-index: -1;
-  top: -350px;
-  left: -350px;
+  top: -55px;
+  left: 0;
   opacity: 0.1;
 }
 .about-section .about-img{
@@ -1155,12 +1155,12 @@ jobs popup
 }
 
 .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
-  position: absolute;
   margin-right: 5px;
   right: 0;
   height: 40px;
-  width: 40px;
+  width: 100%;
   top: 6px;
+  margin-bottom: 10px;
   text-align: center;
   line-height: 40px;
   font-size: 35px;
@@ -1606,7 +1606,6 @@ input:checked + label:before {
   }
   .jobs-popup .pp-close, .jobs-popup-video .pp-close-video{
     position: relative;
-    margin-bottom: 10px;
     height: 48px;
     line-height: 52px;
     width: 100%;
